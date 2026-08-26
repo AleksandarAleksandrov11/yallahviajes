@@ -1,0 +1,67 @@
+/**
+ * Configuración global de la marca y datos de contacto.
+ *
+ * ⚠️  Los valores marcados como PENDIENTE están a la espera de que Yalah Viajes
+ *     los facilite. Ver CONTENIDO-PENDIENTE.md en la raíz del proyecto.
+ */
+
+export const site = {
+  name: 'Yalah Viajes',
+  /** Wordmark tal y como aparece en el logotipo original. */
+  wordmark: 'yalāh viajes',
+  descriptor: 'Marruecos',
+  tagline: 'a un viaje de distancia',
+  shortDescription: 'Tu viaje a Marruecos, organizado desde España.',
+  description:
+    'Yalah Viajes organiza viajes y circuitos por Marruecos para viajeros que salen desde España. Nos ocupamos de todo: alojamiento, comidas, transporte y un conductor y guía de habla hispana que os acompaña durante el recorrido.',
+  /** Cambiar por el dominio definitivo antes de publicar. */
+  url: 'https://www.yalahviajes.com',
+  locale: 'es_ES',
+  lang: 'es',
+} as const
+
+export const contact = {
+  /** Dato real tomado del material de marca de Yalah Viajes. */
+  phoneDisplay: '+34 624 15 89 59',
+  phoneRaw: '+34624158959',
+  whatsappNumber: '34624158959',
+  /** PENDIENTE: correo electrónico oficial de la agencia. */
+  email: null as string | null,
+  emailPlaceholder: '[EMAIL DE CONTACTO]',
+  /** PENDIENTE: población / provincia desde la que se atiende en España. */
+  baseLocation: null as string | null,
+  /** Horario de atención — PENDIENTE de confirmar. */
+  hours: null as string | null,
+} as const
+
+export const social = [
+  {
+    name: 'Instagram',
+    handle: '@yalahviajes',
+    href: 'https://www.instagram.com/yalahviajes/',
+  },
+  // PENDIENTE: Facebook, TikTok u otros perfiles, si existen.
+] as const
+
+/** Mensaje precargado para el enlace de WhatsApp. */
+export function whatsappUrl(message?: string) {
+  const text =
+    message ?? 'Hola Yalah Viajes, me gustaría información sobre vuestros viajes a Marruecos.'
+  return `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(text)}`
+}
+
+export const nav = [
+  { label: 'Inicio', href: '/' },
+  { label: 'Viajes', href: '/viajes' },
+  { label: 'Galería', href: '/galeria' },
+  { label: 'Nosotros', href: '/nosotros' },
+  { label: 'Testimonios', href: '/testimonios' },
+  { label: 'FAQ', href: '/faq' },
+  { label: 'Contacto', href: '/contacto' },
+] as const
+
+export const legalNav = [
+  { label: 'Aviso legal', href: '/legal/aviso-legal' },
+  { label: 'Política de privacidad', href: '/legal/privacidad' },
+  { label: 'Política de cookies', href: '/legal/cookies' },
+] as const

@@ -1,0 +1,250 @@
+@import 'tailwindcss';
+
+/* ==========================================================================
+   YALAH VIAJES — Sistema de diseño
+   Paleta tomada directamente del logotipo de la marca:
+     · Azul marino  #0B2545  (trazo del emblema y fondo del logotipo)
+     · Oro / ocre   #C1943A  (rombo central del emblema)
+     · Crema        #F4EFE8  (versión clara del logotipo)
+   ========================================================================== */
+
+@theme {
+  /* — Base ————————————————————————————————————————————— */
+  --color-paper: #fcfaf7;
+  --color-sand: #f4efe8;
+  --color-sand-2: #ece3d7;
+  --color-sand-3: #ddd0be;
+
+  /* — Azul de identidad ————————————————————————————————— */
+  --color-ink: #0b2545;
+  --color-ink-deep: #061a33;
+  --color-ink-2: #14375f;
+  --color-ink-3: #35577f;
+  --color-muted: #586579;
+
+  /* — Oro / terracota ——————————————————————————————————— */
+  --color-gold: #c1943a;
+  --color-gold-deep: #8a6114;
+  --color-gold-soft: #e2c88f;
+  --color-terracotta: #b0603a;
+
+  /* — Tipografía ————————————————————————————————————————— */
+  --font-display: var(--font-cormorant), 'Iowan Old Style', Georgia, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --text-hero: clamp(2.75rem, 8.2vw, 7.5rem);
+  --text-display: clamp(2.25rem, 5.6vw, 4.75rem);
+  --text-title: clamp(1.75rem, 3.6vw, 3rem);
+  --text-subtitle: clamp(1.25rem, 2.1vw, 1.75rem);
+
+  /* — Ritmo ——————————————————————————————————————————————— */
+  --spacing-section: clamp(5rem, 11vw, 10rem);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-sand);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 1px;
+  }
+
+  /* La barra sticky no debe tapar el destino de un ancla */
+  [id] {
+    scroll-margin-top: 6.5rem;
+  }
+}
+
+/* ==========================================================================
+   Utilidades de marca
+   ========================================================================== */
+
+@utility container-page {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 84rem;
+
+  @media (min-width: 1024px) {
+    padding-inline: 3rem;
+  }
+}
+
+@utility container-prose {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 46rem;
+}
+
+/** Antetítulo editorial: versalitas espaciadas con filete de oro. */
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold-deep);
+}
+
+/** Texto largo editorial */
+@utility prose-editorial {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: color-mix(in srgb, var(--color-ink) 78%, transparent);
+
+  & p + p {
+    margin-top: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+/** Subrayado animado de los enlaces de navegación */
+@utility link-underline {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s var(--ease-out-expo);
+  }
+
+  &:hover::after,
+  &[data-active='true']::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+/* ==========================================================================
+   Texturas y formas de marca
+   ========================================================================== */
+
+/** Grano de arena muy sutil: da cuerpo a los fondos planos. */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.055'/%3E%3C/svg%3E");
+}
+
+/** Arco marroquí: máscara para retratos e imágenes de acento. */
+.arch {
+  clip-path: path(
+    'M0,1 L0,0.42 C0,0.19 0.22,0 0.5,0 C0.78,0 1,0.19 1,0.42 L1,1 Z'
+  );
+  clip-path: url(#yv-arch);
+}
+
+/** Rejilla geométrica inspirada en el zellige del logotipo. */
+.zellige-veil {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23C1943A' stroke-width='1' stroke-opacity='0.5'%3E%3Cpath d='M36 0 L72 36 L36 72 L0 36 Z'/%3E%3Cpath d='M36 18 L54 36 L36 54 L18 36 Z'/%3E%3Cpath d='M0 0 L18 18 M72 0 L54 18 M0 72 L18 54 M72 72 L54 54'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 72px 72px;
+}
+
+/* Ocultar la barra de scroll en carruseles horizontales */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Bloquear el scroll cuando hay un overlay abierto */
+body[data-lock='true'] {
+  overflow: hidden;
+}
+
+/* La animación de entrada evita el flash de contenido.
+   El velo se pinta desde CSS, antes de que React hidrate, para que no se vea
+   el hero durante unos milisegundos. La cortinilla animada se monta encima y
+   este velo desaparece justo cuando arranca la transición hacia el hero. */
+html[data-intro='running'] body {
+  overflow: hidden;
+}
+
+html[data-intro='running']::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background-color: var(--color-sand);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
