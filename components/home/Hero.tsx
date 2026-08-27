@@ -94,15 +94,19 @@ export function Hero() {
         className="container-page relative z-10 pb-16 md:pb-20"
         style={reduced ? undefined : { y: contentY, opacity: contentOpacity }}
       >
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-          className="eyebrow text-gold-soft"
-        >
-          <span aria-hidden="true" className="h-px w-10 bg-current opacity-60" />
-          {site.descriptor} · {site.tagline}
-        </motion.p>
+        {/* En móvil y tablet queda demasiado cerca del logotipo de la cabecera:
+            se muestra solo a partir de escritorio (mismo corte que la navbar). */}
+        <div className="hidden lg:block">
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+            className="eyebrow text-gold-soft"
+          >
+            <span aria-hidden="true" className="h-px w-10 bg-current opacity-60" />
+            {site.descriptor} · {site.tagline}
+          </motion.p>
+        </div>
 
         <h1 className="mt-6 max-w-[15ch] text-hero leading-[0.92] font-light text-sand">
           {['Marruecos,', 'como', 'debe', 'vivirse.'].map((word, i) => (
