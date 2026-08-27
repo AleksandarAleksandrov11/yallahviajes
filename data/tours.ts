@@ -139,10 +139,10 @@ export const tours: Tour[] = [
         route: 'Llegada a Marrakech',
         title: 'Llegada a Marrakech',
         description:
-          'A la hora de la llegada os recogemos en el aeropuerto y os llevamos a nuestro alojamiento en la antigua Medina de Marrakech. Día libre en Marrakech para descubrir la Medina.',
+          'A la hora de tu llegada te recogemos en el aeropuerto y te llevamos a tu alojamiento en la antigua Medina de Marrakech. Día libre en Marrakech para descubrir la Medina.',
         highlights: ['Recogida en el aeropuerto', 'Alojamiento en la antigua Medina', 'Tarde libre'],
         meals: [],
-        stay: 'Marrakech — Medina',
+        stay: 'Marrakech (Medina)',
         image: 'marrakech-zoco',
       },
       {
@@ -169,7 +169,7 @@ export const tours: Tour[] = [
         route: 'Valle del Dades → Merzouga',
         title: 'Valle del Todra · Gargantas del Todra · Desierto de Merzouga',
         description:
-          'Después del desayuno saldremos hacia la garganta del Todra, un paseo de una hora por el valle de Tinghir. Saldremos hacia Merzouga a través de Tinjdad, Erfoud y sus famosos fósiles, Rissani —la antigua capital del desierto de Tafilalet— y Merzouga. Cuando lleguemos al pie de las dunas empezaremos el paseo en dromedario para llegar al bivouac en el centro del Erg Chebbi. Entonces podemos disfrutar del atardecer y el té de menta. La cena y música en el campamento bajo el cielo lleno de estrellas.',
+          'Después del desayuno saldremos hacia la garganta del Todra, un paseo de una hora por el valle de Tinghir. Saldremos hacia Merzouga a través de Tinjdad, Erfoud y sus famosos fósiles, Rissani, la antigua capital del desierto de Tafilalet, y Merzouga. Cuando lleguemos al pie de las dunas empezaremos el paseo en dromedario para llegar al bivouac en el centro del Erg Chebbi. Entonces podemos disfrutar del atardecer y el té de menta. La cena y música en el campamento bajo el cielo lleno de estrellas.',
         highlights: [
           'Gargantas del Todra y valle de Tinghir',
           'Tinjdad, Erfoud y sus fósiles',
@@ -178,7 +178,7 @@ export const tours: Tour[] = [
           'Atardecer, té de menta y música bajo las estrellas',
         ],
         meals: ['desayuno', 'cena'],
-        stay: 'Campamento de lujo — Erg Chebbi',
+        stay: 'Campamento de lujo (Erg Chebbi)',
         image: 'merzouga-caravana-atardecer',
       },
       {
@@ -194,7 +194,7 @@ export const tours: Tour[] = [
           'Llegada a Marrakech sobre las 19:00',
         ],
         meals: ['desayuno'],
-        stay: 'Marrakech — Medina',
+        stay: 'Marrakech (Medina)',
         image: 'amanecer-dunas',
       },
       {
@@ -202,7 +202,7 @@ export const tours: Tour[] = [
         route: 'Marrakech → Aeropuerto',
         title: 'Aeropuerto de Marrakech',
         description:
-          'El último día de nuestro mágico viaje tienes la oportunidad de conocer la Medina de Marrakech, dependiendo del horario de vuestro vuelo. A la hora del vuelo os llevaremos al aeropuerto para regresar a España.',
+          'El último día de tu mágico viaje tienes la oportunidad de conocer la Medina de Marrakech, dependiendo del horario de tu vuelo. A la hora del vuelo te llevaremos al aeropuerto para regresar a España.',
         highlights: ['Tiempo libre en la Medina', 'Traslado al aeropuerto'],
         meals: ['desayuno'],
         stay: null,
@@ -279,10 +279,10 @@ export const tours: Tour[] = [
         route: 'Llegada a Marrakech',
         title: 'Marrakech',
         description:
-          'A la hora de la llegada os recogemos en el aeropuerto y os llevamos a nuestro alojamiento en la Medina de Marrakech. Día libre en Marrakech.',
+          'A la hora de tu llegada te recogemos en el aeropuerto y te llevamos a tu alojamiento en la Medina de Marrakech. Día libre en Marrakech.',
         highlights: ['Recogida en el aeropuerto', 'Alojamiento en la Medina', 'Día libre'],
         meals: [],
-        stay: 'Marrakech — Medina',
+        stay: 'Marrakech (Medina)',
         image: 'marrakech-koutoubia',
       },
       {
@@ -315,7 +315,7 @@ export const tours: Tour[] = [
           'Atardecer sobre las dunas naranjas',
         ],
         meals: ['desayuno', 'cena'],
-        stay: 'Campamento de lujo — Erg Chebbi',
+        stay: 'Campamento de lujo (Erg Chebbi)',
         image: 'dades-carretera-roja',
       },
       {
@@ -332,7 +332,7 @@ export const tours: Tour[] = [
           'Piscina en medio del desierto',
         ],
         meals: ['desayuno', 'cena'],
-        stay: 'Merzouga — hotel',
+        stay: 'Merzouga (hotel)',
         image: 'quad-dunas',
       },
       {
@@ -343,7 +343,7 @@ export const tours: Tour[] = [
           'Después de un buen desayuno en el hotel llega el momento de despedirnos del desierto para volver a Marrakech, con paradas de descanso y para comer. Llegaremos a Marrakech sobre las 19:00.',
         highlights: ['Desayuno en el hotel', 'Regreso con paradas de descanso', 'Llegada sobre las 19:00'],
         meals: ['desayuno'],
-        stay: 'Marrakech — Medina',
+        stay: 'Marrakech (Medina)',
         image: 'dunas-caravana-amplia',
       },
       {
@@ -351,7 +351,7 @@ export const tours: Tour[] = [
         route: 'Marrakech → Aeropuerto',
         title: 'Aeropuerto de Marrakech',
         description:
-          'El último día de nuestro mágico viaje tienes la oportunidad de conocer la Medina de Marrakech, dependiendo del horario de vuestro vuelo. A la hora del vuelo os llevaremos al aeropuerto para regresar a casa.',
+          'El último día de tu mágico viaje tienes la oportunidad de conocer la Medina de Marrakech, dependiendo del horario de tu vuelo. A la hora del vuelo te llevaremos al aeropuerto para regresar a casa.',
         highlights: ['Tiempo libre en la Medina', 'Traslado al aeropuerto'],
         meals: ['desayuno'],
         stay: null,

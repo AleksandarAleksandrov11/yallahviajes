@@ -60,28 +60,12 @@ comparativa, en la ficha del viaje y en los datos estructurados de Google.
 Mientras sea `null`, el pie de página simplemente no muestra la línea de correo
 (no aparece ningún hueco ni marcador). Al rellenarlo, aparece automáticamente.
 
-### Formulario de contacto — `components/contact/ContactForm.tsx` → `ENDPOINT`
+### Formulario de contacto — `components/contact/ContactForm.tsx`
 
-Hoy el formulario **valida y compone el mensaje, y lo abre en WhatsApp**, que es
-el canal real de la agencia. No finge un envío que no ocurre.
-
-Cuando exista un backend (una API route, Resend, Formspree, Brevo…), basta con:
-
-```ts
-const ENDPOINT: string | null = 'https://…/consulta'
-```
-
-El formulario pasará a hacer `POST` con el JSON de los campos y mostrará el panel
-de éxito. El texto de ese panel está en `SuccessPanel`, dentro del mismo fichero.
-
-### Testimonios — `data/testimonials.ts`
-
-El array está vacío **a propósito**: no hay ni habrá reseñas inventadas. Mientras
-esté vacío, `/testimonios` y la home muestran un bloque editorial honesto que
-explica la política y lleva a Instagram.
-
-Al añadir el primer testimonio con el formato documentado en el fichero, ambas
-secciones pasan a mostrarlos automáticamente, sin tocar nada más.
+El formulario valida los datos y abre WhatsApp con el mensaje ya redactado a
+partir de lo que se ha rellenado, listo para enviar al número de Yalah Viajes.
+Es una decisión deliberada, no un parche temporal: la consulta llega al
+momento, sin depender de un servidor de correo.
 
 ### Respuestas de FAQ pendientes — `data/faq.ts`
 

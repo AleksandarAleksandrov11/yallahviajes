@@ -98,7 +98,7 @@ export function LogoLink({
   return (
     <Link
       href="/"
-      aria-label={`${site.name} — inicio`}
+      aria-label={`${site.name}, inicio`}
       className={`group inline-flex items-center ${className}`}
     >
       <LogoLockup {...rest} />

@@ -1,6 +1,6 @@
 /**
  * Inyecta datos estructurados. El contenido procede siempre de data/ y de
- * lib/seo.ts —nunca de entrada del usuario—, así que se serializa tal cual.
+ * lib/seo.ts (nunca de entrada del usuario), así que se serializa tal cual.
  */
 export function JsonLd({ data }: { data: unknown }) {
   return (

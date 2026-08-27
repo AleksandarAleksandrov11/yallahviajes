@@ -31,7 +31,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'Yalah Viajes — Viajes organizados a Marruecos desde España',
+    default: 'Yalah Viajes · Viajes organizados a Marruecos desde España',
     template: '%s | Yalah Viajes',
   },
   description: site.description,

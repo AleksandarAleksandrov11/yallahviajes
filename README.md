@@ -44,7 +44,7 @@ app/                     Rutas (App Router)
   page.tsx               Home
   viajes/                Índice de viajes
   viajes/[slug]/         Ficha de cada viaje (generada desde data/tours.ts)
-  galeria/ testimonios/ nosotros/ contacto/ faq/
+  galeria/ nosotros/ contacto/ faq/
   legal/                 Aviso legal · Privacidad · Cookies
   sitemap.ts robots.ts   SEO técnico
   globals.css            Sistema de diseño (tokens, utilidades, texturas)
@@ -62,7 +62,6 @@ data/                    ⬅ TODO EL CONTENIDO EDITABLE VIVE AQUÍ
   destinations.ts        Destinos que aparecen en las rutas
   gallery.ts             Composición de la galería
   faq.ts                 Preguntas frecuentes
-  testimonials.ts        Testimonios (vacío hasta tener los reales)
   legal.ts               Datos del titular e inventario de cookies
   images.ts              Fotografías (autogenerado)
 
@@ -182,6 +181,6 @@ correo y respuestas de FAQ) con el fichero exacto donde va cada uno.
 
 ## Regla de contenido
 
-No hay ni un dato inventado en esta web: ni precios, ni hoteles, ni testimonios,
-ni años de experiencia, ni certificaciones. Cuando falta información, la web lo
-dice con claridad y ofrece la vía rápida para preguntarlo.
+No hay ni un dato inventado en esta web: ni precios, ni hoteles, ni años de
+experiencia, ni certificaciones. Cuando falta información, la web lo dice con
+claridad y ofrece la vía rápida para preguntarlo.

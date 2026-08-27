@@ -12,12 +12,12 @@ const STEPS = [
   {
     n: '01',
     title: 'Nos escribes desde España',
-    text: 'Por WhatsApp, por teléfono o desde el formulario. Nos cuentas cuántos sois, qué fechas manejáis y qué os apetece ver.',
+    text: 'Por WhatsApp, por teléfono o desde el formulario. Nos cuentas cuántos vais a viajar, qué fechas manejas y qué te apetece ver.',
     image: 'marrakech-koutoubia-pastel' as const,
   },
   {
     n: '02',
-    title: 'Elegimos la ruta que os encaja',
+    title: 'Elegimos la ruta que te encaja',
     text: 'Cinco días o seis, una noche en el desierto o dos. Te decimos con claridad qué entra en cada opción y qué no.',
     image: 'dunas-minimal' as const,
   },
@@ -30,19 +30,19 @@ const STEPS = [
   {
     n: '04',
     title: 'Llegas a Marrakech',
-    text: 'Os esperamos en el aeropuerto a la hora de llegada del vuelo y os llevamos al alojamiento en la Medina.',
+    text: 'Te esperamos en el aeropuerto a la hora de llegada del vuelo y te llevamos al alojamiento en la Medina.',
     image: 'marrakech-zoco' as const,
   },
   {
     n: '05',
-    title: 'Nuestros guías os acompañan',
-    text: 'El mismo conductor y guía durante todo el recorrido: conduce, traduce y os cuenta lo que estáis viendo.',
+    title: 'Nuestros guías te acompañan',
+    text: 'El mismo conductor y guía durante todo el recorrido: conduce, traduce y te cuenta lo que estás viendo.',
     image: 'valle-pueblo' as const,
   },
   {
     n: '06',
     title: 'Disfrutas del viaje',
-    text: 'Vosotros solo tenéis que mirar por la ventanilla, subir a la duna y quedaros a ver el amanecer.',
+    text: 'Tú solo tienes que mirar por la ventanilla, subir a la duna y quedarte a ver el amanecer.',
     image: 'amanecer-viajera' as const,
   },
 ]

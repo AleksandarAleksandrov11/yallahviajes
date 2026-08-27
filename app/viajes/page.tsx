@@ -90,8 +90,8 @@ export default function ViajesPage() {
             ¿No sabes cuál de las dos te encaja?
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-[1rem] leading-relaxed text-sand/62">
-            Dinos cuántos días tenéis y qué os apetece y te decimos con franqueza cuál elegiríamos
-            nosotros. También adaptamos la ruta si necesitáis algo distinto.
+            Dinos cuántos días tienes y qué te apetece y te decimos con franqueza cuál elegiríamos
+            nosotros. También adaptamos la ruta si necesitas algo distinto.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <ButtonLink href="/contacto" variant="light" size="lg" withArrow>

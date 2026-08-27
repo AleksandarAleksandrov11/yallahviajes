@@ -22,7 +22,7 @@ const PILLARS = [
   {
     icon: Compass,
     title: 'Conductor y guía de habla hispana',
-    text: 'La misma persona os acompaña desde el aeropuerto hasta el último día. Nada de cambiar de guía en cada ciudad ni de entenderse por señas.',
+    text: 'La misma persona te acompaña desde el aeropuerto hasta el último día. Nada de cambiar de guía en cada ciudad ni de entenderse por señas.',
   },
   {
     icon: Sparkles,

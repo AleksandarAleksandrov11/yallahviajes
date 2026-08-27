@@ -43,7 +43,7 @@ function validate(values: Fields): Errors {
   if (values.telefono.trim() && !/^[+\d][\d\s().-]{6,}$/.test(values.telefono.trim()))
     errors.telefono = 'Ese teléfono no parece válido.'
   const travellers = Number(values.viajeros)
-  if (!Number.isFinite(travellers) || travellers < 1) errors.viajeros = 'Indica cuántos vais a viajar.'
+  if (!Number.isFinite(travellers) || travellers < 1) errors.viajeros = 'Indica el número de viajeros.'
   if (values.mensaje.trim().length < 10) errors.mensaje = 'Cuéntanos algo más para poder ayudarte.'
   if (!values.privacidad) errors.privacidad = 'Necesitamos tu consentimiento para poder responderte.'
   return errors
@@ -52,14 +52,12 @@ function validate(values: Fields): Errors {
 /**
  * Formulario de contacto.
  *
- * ⚠️  PENDIENTE: no hay backend conectado todavía. Mientras `ENDPOINT` sea
- *     `null`, el botón compone el mensaje y lo abre en WhatsApp, que es el
- *     canal real de la agencia — así la web ya convierte sin fingir un envío
- *     que no ocurre. Cuando exista un endpoint (o un servicio tipo Resend /
- *     Formspree), basta con poner aquí su URL.
+ * Al enviarlo, se valida todo y se abre WhatsApp con el mensaje ya redactado
+ * a partir de los datos del formulario, listo para mandar al número de
+ * Yalah Viajes. Es el canal real de la agencia: la consulta llega al
+ * momento, sin depender de un servidor de correo ni de un formulario que se
+ * quede a medias.
  */
-const ENDPOINT: string | null = null
-
 export function ContactForm() {
   const searchParams = useSearchParams()
   const [values, setValues] = useState<Fields>(EMPTY)
@@ -120,19 +118,9 @@ export function ContactForm() {
       .join('\n')
 
     try {
-      if (ENDPOINT) {
-        const res = await fetch(ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(values),
-        })
-        if (!res.ok) throw new Error('bad response')
-        setStatus('sent')
-      } else {
-        // Sin backend: derivamos al canal real de la agencia
-        window.open(whatsappUrl(summary), '_blank', 'noopener,noreferrer')
-        setStatus('sent')
-      }
+      const win = window.open(whatsappUrl(summary), '_blank', 'noopener,noreferrer')
+      if (!win) throw new Error('popup blocked')
+      setStatus('sent')
     } catch {
       setStatus('error')
     }
@@ -227,7 +215,7 @@ export function ContactForm() {
         error={touched.mensaje ? errors.mensaje : undefined}
         onChange={(v) => set('mensaje', v)}
         onBlur={() => blur('mensaje')}
-        placeholder="Cuéntanos qué os apetece hacer, cuántos días tenéis o cualquier duda que tengáis."
+        placeholder="Cuéntanos qué te apetece hacer, cuántos días tienes o cualquier duda que tengas."
       />
 
       <CheckboxField

@@ -35,6 +35,7 @@
     { "source": "/viajes/marruecos-6-dias-5-noches", "destination": "/viajes/marruecos-6-dias", "permanent": true },
     { "source": "/contact", "destination": "/contacto", "permanent": true },
     { "source": "/gallery", "destination": "/galeria", "permanent": true },
-    { "source": "/about", "destination": "/nosotros", "permanent": true }
+    { "source": "/about", "destination": "/nosotros", "permanent": true },
+    { "source": "/testimonios", "destination": "/nosotros", "permanent": true }
   ]
 }

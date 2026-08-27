@@ -84,7 +84,7 @@ export default function NosotrosPage() {
               <p>
                 Organizamos el viaje desde España, en tu idioma y en tu horario. Y cuando aterrizas
                 en Marrakech, te espera nuestro equipo sobre el terreno: un conductor y un guía de
-                habla hispana que os acompañan durante todo el recorrido, desde el aeropuerto hasta
+                habla hispana que te acompañan durante todo el recorrido, desde el aeropuerto hasta
                 la última noche.
               </p>
             </Reveal>
@@ -141,7 +141,7 @@ export default function NosotrosPage() {
               </h3>
               <p className="mt-4 max-w-md text-[0.96rem] leading-relaxed text-sand/62">
                 Aquí es donde empieza todo: resolvemos tus dudas, te proponemos la ruta que encaja
-                con vuestros días y vuestro ritmo, ajustamos los horarios a los vuelos y dejamos
+                con tus días y tu ritmo, ajustamos los horarios a los vuelos y dejamos
                 cerrado alojamiento, comidas, transporte y actividades. Todo por escrito, antes de
                 que pagues nada.
               </p>
@@ -155,8 +155,8 @@ export default function NosotrosPage() {
                 El acompañamiento
               </h3>
               <p className="mt-4 max-w-md text-[0.96rem] leading-relaxed text-sand/62">
-                Nuestro conductor y nuestro guía os recogen en el aeropuerto y no os sueltan hasta el
-                final. Conducen por vosotros, traducen, os cuentan la historia de cada kasbah y os
+                Nuestro conductor y nuestro guía te recogen en el aeropuerto y no te sueltan hasta el
+                final. Conducen por ti, traducen, te cuentan la historia de cada kasbah y te
                 llevan a los sitios donde ellos comerían. Si surge un imprevisto, lo resuelven allí
                 mismo.
               </p>
@@ -216,9 +216,9 @@ export default function NosotrosPage() {
 
           <Reveal delay={0.1}>
             <p className="mt-14 max-w-2xl text-[0.84rem] leading-relaxed text-muted">
-              Somos una agencia joven: preferimos no adornar esta página con cifras de años de
-              experiencia o de viajeros atendidos que todavía no nos corresponden. Lo que sí podemos
-              enseñarte es el trabajo: nuestras rutas, nuestras fotos y nuestro teléfono.
+              Preferimos no adornar esta página con cifras genéricas. Lo que puedes comprobar es el
+              trabajo: nuestras rutas, nuestras fotos y un teléfono al otro lado siempre que lo
+              necesites.
             </p>
           </Reveal>
         </div>

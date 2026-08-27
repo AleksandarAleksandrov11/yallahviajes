@@ -85,8 +85,8 @@ export default function PrivacidadPage() {
         </ul>
         <p>
           No tratamos datos de categorías especiales (salud, ideología, religión…). Si necesitas
-          comunicarnos alguna circunstancia relevante para el viaje —por ejemplo, una alergia
-          alimentaria—, la trataremos únicamente para poder prestarte el servicio y con tu
+          comunicarnos alguna circunstancia relevante para el viaje, por ejemplo una alergia
+          alimentaria, la trataremos únicamente para poder prestarte el servicio y con tu
           consentimiento explícito.
         </p>
         <p>

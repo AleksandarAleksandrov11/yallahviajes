@@ -28,14 +28,14 @@ export function HomeIntro() {
             <Reveal delay={0.1} className="mt-8 max-w-lg prose-editorial">
               <p>
                 Yalah Viajes nace para que ir a Marruecos deje de ser complicado. Preparamos el viaje
-                contigo desde España —ruta, alojamientos, tiempos, lo que te apetece ver— y cuando
+                contigo desde España: ruta, alojamientos, tiempos, lo que te apetece ver. Y cuando
                 aterrizas en Marrakech ya está todo resuelto.
               </p>
               <p>
-                Allí te espera nuestro equipo. Un conductor y un guía de habla hispana os acompañan
-                durante todo el recorrido: conducen, traducen, negocian, os cuentan lo que estáis
-                viendo y os llevan a los sitios que no salen en las guías. No sois un grupo con un
-                número; sois las personas que van en ese coche.
+                Allí te espera nuestro equipo. Un conductor y un guía de habla hispana te acompañan
+                durante todo el recorrido: conducen, traducen, negocian, te cuentan lo que estás
+                viendo y te llevan a los sitios que no salen en las guías. No eres un número en un
+                grupo: eres tú quien viaja en ese coche.
               </p>
             </Reveal>
 

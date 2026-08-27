@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       url: `/img/${tour.hero}.jpg`,
       width: 1200,
       height: 900,
-      alt: `${tour.name} — Yalah Viajes`,
+      alt: `${tour.name}, Yalah Viajes`,
     },
   })
 }

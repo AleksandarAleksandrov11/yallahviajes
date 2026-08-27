@@ -124,7 +124,7 @@ export default function ContactoPage() {
                             Instagram
                           </span>
                           <span className="mt-1 block text-[0.86rem] text-ink/68">
-                            {s.handle} — el día a día de las rutas
+                            {s.handle}, el día a día de las rutas
                           </span>
                         </span>
                       </a>

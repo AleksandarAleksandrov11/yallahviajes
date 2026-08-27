@@ -127,7 +127,7 @@ export function Hero() {
           className="mt-7 max-w-lg text-[1.02rem] leading-relaxed text-sand/78 md:text-[1.12rem]"
         >
           Viajes organizados desde España al desierto del Sahara, Marrakech y las kasbahs del sur.
-          Nosotros lo preparamos todo; allí, nuestro conductor y guía de habla hispana os acompaña
+          Nosotros lo preparamos todo; allí, nuestro conductor y guía de habla hispana te acompaña
           durante todo el recorrido.
         </motion.p>
 

@@ -28,7 +28,7 @@ export function TourCard({ tour, index }: { tour: Tour; index: number }) {
 
       <div className="flex flex-1 flex-col pt-7">
         <span className="font-sans text-[0.6rem] tracking-[0.24em] text-gold-deep tabular-nums uppercase">
-          {String(index + 1).padStart(2, '0')} — Ruta de {tour.days} días
+          {String(index + 1).padStart(2, '0')} · Ruta de {tour.days} días
         </span>
 
         <h3 className="mt-4 text-title leading-tight text-ink transition-colors duration-500 group-hover:text-ink-2">

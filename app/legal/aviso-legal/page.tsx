@@ -126,8 +126,8 @@ export default function AvisoLegalPage() {
 
       <LegalSection n="05" title="Propiedad intelectual e industrial">
         <p>
-          Todos los contenidos del sitio —textos, fotografías, itinerarios, diseño gráfico, logotipo,
-          código fuente y selección y disposición de los contenidos— son titularidad de{' '}
+          Todos los contenidos del sitio (textos, fotografías, itinerarios, diseño gráfico, logotipo,
+          código fuente y selección y disposición de los contenidos) son titularidad de{' '}
           {legal.tradeName} o de terceros que han autorizado su uso, y están protegidos por la
           normativa de propiedad intelectual e industrial.
         </p>
@@ -151,7 +151,7 @@ export default function AvisoLegalPage() {
         <p>
           La información sobre itinerarios, servicios incluidos, horarios y descripciones publicada
           en este sitio tiene carácter informativo y orientativo. Las condiciones concretas de cada
-          viaje —precio, fechas, alojamientos y servicios— son las que se pacten por escrito con el
+          viaje (precio, fechas, alojamientos y servicios) son las que se pacten por escrito con el
           cliente en el momento de la contratación.
         </p>
         <p>

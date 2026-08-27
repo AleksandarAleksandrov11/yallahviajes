@@ -13,7 +13,7 @@ export const site = {
   tagline: 'a un viaje de distancia',
   shortDescription: 'Tu viaje a Marruecos, organizado desde España.',
   description:
-    'Yalah Viajes organiza viajes y circuitos por Marruecos para viajeros que salen desde España. Nos ocupamos de todo: alojamiento, comidas, transporte y un conductor y guía de habla hispana que os acompaña durante el recorrido.',
+    'Yalah Viajes organiza viajes y circuitos por Marruecos para viajeros que salen desde España. Nos ocupamos de todo: alojamiento, comidas, transporte y un conductor y guía de habla hispana que te acompaña durante el recorrido.',
   /** Cambiar por el dominio definitivo antes de publicar. */
   url: 'https://www.yalahviajes.com',
   locale: 'es_ES',
@@ -46,7 +46,7 @@ export const social = [
 /** Mensaje precargado para el enlace de WhatsApp. */
 export function whatsappUrl(message?: string) {
   const text =
-    message ?? 'Hola Yalah Viajes, me gustaría información sobre vuestros viajes a Marruecos.'
+    message ?? 'Hola Yalah Viajes, me gustaría información sobre los viajes a Marruecos.'
   return `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(text)}`
 }
 
@@ -55,7 +55,6 @@ export const nav = [
   { label: 'Viajes', href: '/viajes' },
   { label: 'Galería', href: '/galeria' },
   { label: 'Nosotros', href: '/nosotros' },
-  { label: 'Testimonios', href: '/testimonios' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contacto', href: '/contacto' },
 ] as const

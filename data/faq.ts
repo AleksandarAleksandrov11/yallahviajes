@@ -24,7 +24,7 @@ export const faqCategories: { id: FaqCategory; label: string; intro: string }[] 
   { id: 'viaje', label: 'El viaje', intro: 'Cómo funciona el circuito de principio a fin.' },
   { id: 'alojamiento', label: 'Alojamiento', intro: 'Dónde se duerme cada noche.' },
   { id: 'comidas', label: 'Comidas', intro: 'Qué comidas están incluidas.' },
-  { id: 'transporte', label: 'Transporte y guías', intro: 'Cómo nos movemos y quién os acompaña.' },
+  { id: 'transporte', label: 'Transporte y guías', intro: 'Cómo nos movemos y quién te acompaña.' },
   { id: 'reservas', label: 'Reservas y precios', intro: 'Cómo se reserva y qué hay que saber antes.' },
   { id: 'marruecos', label: 'Marruecos', intro: 'Preparar el viaje y llegar tranquilo.' },
 ]
@@ -34,14 +34,14 @@ export const faq: FaqItem[] = [
   {
     q: '¿Desde dónde empieza el viaje?',
     answer:
-      'El circuito empieza y termina en el aeropuerto de Marrakech. Os recogemos a la llegada del vuelo y os llevamos al alojamiento en la Medina; el último día os acercamos de nuevo al aeropuerto según el horario de vuestro vuelo.',
+      'El circuito empieza y termina en el aeropuerto de Marrakech. Te recogemos a la llegada del vuelo y te llevamos al alojamiento en la Medina. El último día te acercamos de nuevo al aeropuerto según el horario de tu vuelo.',
     category: 'viaje',
     featured: true,
   },
   {
     q: '¿Qué diferencia hay entre el viaje de 5 días y el de 6 días?',
     answer:
-      'El recorrido base es el mismo: Alto Atlas, Aït Ben Haddou, valle del Dades, gargantas del Todra y desierto de Merzouga. La ruta de 6 días añade una jornada completa en el desierto —excursión en 4x4, visita a familias nómadas y a las antiguas minas de kohl, té y música en vivo en Khamlia— y una segunda noche en Merzouga, en hotel con piscina.',
+      'El recorrido base es el mismo: Alto Atlas, Aït Ben Haddou, valle del Dades, gargantas del Todra y desierto de Merzouga. La ruta de 6 días añade una jornada completa en el desierto: excursión en 4x4, visita a familias nómadas y a las antiguas minas de kohl, té y música en vivo en Khamlia, y una segunda noche en Merzouga, en hotel con piscina.',
     category: 'viaje',
     featured: true,
   },
@@ -87,7 +87,7 @@ export const faq: FaqItem[] = [
   {
     q: '¿Las comidas están incluidas?',
     answer:
-      'Están incluidos todos los desayunos, y las cenas de las noches en el Dades, en el campamento del desierto y —en la ruta de 6 días— en Merzouga. En la ruta de 5 días también se incluye el almuerzo del día 2, en Aït Ben Haddou. El resto de comidas y bebidas no están incluidas: se paran para comer durante la ruta, en sitios que conocemos bien.',
+      'Están incluidos todos los desayunos, y las cenas de las noches en el Dades, en el campamento del desierto y, en la ruta de 6 días, en Merzouga. En la ruta de 5 días también se incluye el almuerzo del día 2, en Aït Ben Haddou. El resto de comidas y bebidas no están incluidas: se paran para comer durante la ruta, en sitios que conocemos bien.',
     category: 'comidas',
     featured: true,
   },
@@ -108,14 +108,14 @@ export const faq: FaqItem[] = [
   {
     q: '¿Tenemos guía en español?',
     answer:
-      'Sí. Nuestro conductor y guía es de habla hispana y os acompaña durante todo el recorrido, desde la recogida en el aeropuerto hasta el regreso.',
+      'Sí. Nuestro conductor y guía es de habla hispana y te acompaña durante todo el recorrido, desde la recogida en el aeropuerto hasta el regreso.',
     category: 'transporte',
     featured: true,
   },
   {
     q: '¿Qué ocurre cuando llegamos a Marruecos?',
     answer:
-      'Os esperamos en el aeropuerto de Marrakech a la hora de llegada de vuestro vuelo y os llevamos directamente al alojamiento en la Medina. A partir de ahí ya no tenéis que organizar nada: cada mañana se sale a la hora acordada y nosotros nos encargamos de la ruta, las paradas, las visitas y los alojamientos.',
+      'Te esperamos en el aeropuerto de Marrakech a la hora de llegada de tu vuelo y te llevamos directamente al alojamiento en la Medina. A partir de ahí ya no tienes que organizar nada: cada mañana se sale a la hora acordada y nosotros nos encargamos de la ruta, las paradas, las visitas y los alojamientos.',
     category: 'transporte',
     featured: true,
   },
@@ -142,7 +142,7 @@ export const faq: FaqItem[] = [
   {
     q: '¿Están incluidos los vuelos desde España?',
     answer:
-      'No. Los vuelos no están incluidos: nosotros organizamos toda la experiencia dentro de Marruecos, desde que aterrizáis en Marrakech hasta que os dejamos de nuevo en el aeropuerto. Si nos decís vuestros horarios de vuelo, ajustamos la recogida y el traslado de vuelta.',
+      'No. Los vuelos no están incluidos: nosotros organizamos toda la experiencia dentro de Marruecos, desde que aterrizas en Marrakech hasta que te dejamos de nuevo en el aeropuerto. Si nos dices tus horarios de vuelo, ajustamos la recogida y el traslado de vuelta.',
     category: 'reservas',
   },
   {
@@ -160,7 +160,7 @@ export const faq: FaqItem[] = [
   {
     q: '¿Qué debo llevar en la maleta?',
     answer:
-      'Lo que pide la ruta: calzado cómodo para caminar por la kasbah y las gargantas, ropa ligera para el día y algo de abrigo para la noche del desierto, gafas de sol, protección solar y un pañuelo para la arena —también podréis comprar uno en el bazar bereber de camino a Merzouga—. En el campamento y en los alojamientos no hace falta nada especial.',
+      'Lo que pide la ruta: calzado cómodo para caminar por la kasbah y las gargantas, ropa ligera para el día y algo de abrigo para la noche del desierto, gafas de sol, protección solar y un pañuelo para la arena (también puedes comprarlo en el bazar bereber de camino a Merzouga). En el campamento y en los alojamientos no hace falta nada especial.',
     category: 'marruecos',
   },
   {

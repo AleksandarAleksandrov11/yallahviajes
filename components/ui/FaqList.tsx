@@ -6,7 +6,7 @@ import type { FaqItem } from '@/data/faq'
 /**
  * Convierte las preguntas de data/faq.ts en entradas de acordeón.
  * Si una respuesta está pendiente, se dice con claridad y se ofrece
- * la vía rápida —WhatsApp— en lugar de inventar el dato.
+ * la vía rápida (WhatsApp) en lugar de inventar el dato.
  */
 export function toAccordionEntries(items: FaqItem[], tone: 'ink' | 'light' = 'ink'): AccordionEntry[] {
   return items.map((item, i) => ({
