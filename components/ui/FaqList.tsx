@@ -19,7 +19,7 @@ export function toAccordionEntries(items: FaqItem[], tone: 'ink' | 'light' = 'in
         Estamos terminando de cerrar este dato y preferimos no publicarlo hasta tenerlo confirmado.
         Si lo necesitas ahora,{' '}
         <a
-          href={whatsappUrl(`Hola Yalah Viajes, tengo una duda: ${item.q}`)}
+          href={whatsappUrl(`Hola Yallah Viajes, tengo una duda: ${item.q}`)}
           target="_blank"
           rel="noopener noreferrer"
           className="link-underline font-medium text-gold-deep"

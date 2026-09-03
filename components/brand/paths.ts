@@ -1,5 +1,5 @@
 /**
- * Trazados vectoriales del logotipo de Yalah Viajes.
+ * Trazados vectoriales del logotipo de Yallah Viajes.
  *
  * Obtenidos por vectorización del logotipo original de la marca
  * (emblema bereber con rombo central + logotipo «yalāh viajes»).

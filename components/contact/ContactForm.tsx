@@ -54,7 +54,7 @@ function validate(values: Fields): Errors {
  *
  * Al enviarlo, se valida todo y se abre WhatsApp con el mensaje ya redactado
  * a partir de los datos del formulario, listo para mandar al número de
- * Yalah Viajes. Es el canal real de la agencia: la consulta llega al
+ * Yallah Viajes. Es el canal real de la agencia: la consulta llega al
  * momento, sin depender de un servidor de correo ni de un formulario que se
  * quede a medias.
  */
@@ -105,7 +105,7 @@ export function ContactForm() {
 
     const tourName = tours.find((t) => t.slug === values.viaje)?.name
     const summary = [
-      `Hola Yalah Viajes, soy ${values.nombre.trim()}.`,
+      `Hola Yallah Viajes, soy ${values.nombre.trim()}.`,
       tourName ? `Me interesa el viaje: ${tourName}.` : null,
       `Seríamos ${values.viajeros} viajero(s).`,
       values.fecha ? `Fechas aproximadas: ${values.fecha}.` : null,

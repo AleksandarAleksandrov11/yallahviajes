@@ -36,11 +36,11 @@ export type LegalHolder = {
 
 export const legal: LegalHolder = {
   legalName: 'María del Pilar Arribas Muñoz',
-  tradeName: 'Yalah Viajes',
+  tradeName: 'Yallah Viajes',
   taxId: '05723254A',
   address: 'Avenida de España 56, 13130 Fuente el Fresno (Ciudad Real), España',
   email: 'pilararribas1996@gmail.com',
-  phone: '+34 624 15 89 59',
+  phone: '+34 645 19 65 93',
   /** Persona física: no procede inscripción registral. */
   registry: null,
   /** Pendiente de facilitar si la actividad requiere título administrativo. */
@@ -76,7 +76,7 @@ export type CookieEntry = {
 export const cookieInventory: CookieEntry[] = [
   {
     name: 'yv-consent',
-    provider: 'Yalah Viajes (almacenamiento local del navegador)',
+    provider: 'Yallah Viajes (almacenamiento local del navegador)',
     purpose:
       'Guarda tu decisión sobre las cookies para no volver a preguntártelo en cada visita.',
     duration: 'Hasta que la borres o cambies tu decisión',
@@ -84,7 +84,7 @@ export const cookieInventory: CookieEntry[] = [
   },
   {
     name: 'yv-intro-seen',
-    provider: 'Yalah Viajes (almacenamiento de sesión del navegador)',
+    provider: 'Yallah Viajes (almacenamiento de sesión del navegador)',
     purpose: 'Evita repetir la animación de entrada mientras navegas por la web.',
     duration: 'Se borra al cerrar la pestaña',
     type: 'necesaria',

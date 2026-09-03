@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   ...pageMetadata({
     title: 'Política de privacidad',
     description:
-      'Cómo trata Yalah Viajes los datos personales que le facilitas: responsable, finalidad, base legal, plazos y derechos.',
+      'Cómo trata Yallah Viajes los datos personales que le facilitas: responsable, finalidad, base legal, plazos y derechos.',
     path: '/legal/privacidad',
   }),
   robots: { index: false, follow: true },

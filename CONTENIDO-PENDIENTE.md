@@ -1,7 +1,7 @@
 # Contenido pendiente y pasos para publicar
 
 Los itinerarios, las inclusiones, los precios y los datos de la titular proceden
-de los materiales facilitados por Yalah Viajes y son literales.
+de los materiales facilitados por Yallah Viajes y son literales.
 
 **Las políticas comerciales sí se han redactado desde cero** a petición de la
 agencia, para no dejar huecos en la web: grupos, fechas de salida, proceso de
@@ -51,7 +51,7 @@ un precio desactualizado se muestra en los resultados de búsqueda.
 
 ## 2. Fotografías
 
-Todas las fotos actuales son material propio de Yalah Viajes, extraídas de los
+Todas las fotos actuales son material propio de Yallah Viajes, extraídas de los
 dossieres y del archivo de la agencia. **No se usa ninguna imagen de banco**, y
 así lo declara el aviso legal.
 

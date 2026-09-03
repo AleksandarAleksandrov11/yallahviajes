@@ -36,7 +36,7 @@ export function Hero() {
     <section
       ref={ref}
       className="relative flex h-[100svh] min-h-[36rem] flex-col justify-end overflow-hidden bg-ink"
-      aria-label="Yalah Viajes, viajes organizados a Marruecos"
+      aria-label="Yallah Viajes, viajes organizados a Marruecos"
     >
       <motion.div className="absolute inset-0" style={reduced ? undefined : { y: imageY, scale: 1.08 }}>
         <Image

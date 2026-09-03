@@ -1,7 +1,7 @@
 /**
  * Configuración global de la marca y datos de contacto.
  *
- * Todos los datos son reales y facilitados por Yalah Viajes.
+ * Todos los datos son reales y facilitados por Yallah Viajes.
  */
 
 /** Normaliza a `https://dominio` sin barra final. */
@@ -17,18 +17,24 @@ function resolveSiteUrl() {
   const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL
   if (vercel) return normalize(vercel)
 
-  return 'https://www.yalahviajes.com'
+  // Último recurso, mientras no se defina NEXT_PUBLIC_SITE_URL: confirmar
+  // que este es el dominio realmente registrado antes de publicar.
+  return 'https://www.yallahviajes.com'
 }
 
 export const site = {
-  name: 'Yalah Viajes',
-  /** Wordmark tal y como aparece en el logotipo original. */
+  name: 'Yallah Viajes',
+  /**
+   * Wordmark tal y como aparece dibujado en el logotipo original: la marca
+   * gráfica lleva una sola «l» por diseño tipográfico, pero el nombre de la
+   * empresa se escribe «Yallah» (con dos) en cualquier otro sitio del texto.
+   */
   wordmark: 'yalāh viajes',
   descriptor: 'Marruecos',
   tagline: 'a un viaje de distancia',
   shortDescription: 'Tu viaje a Marruecos, organizado desde España.',
   description:
-    'Yalah Viajes organiza viajes y circuitos por Marruecos para viajeros que salen desde España. Nos ocupamos de todo: alojamiento, comidas, transporte y un conductor y guía de habla hispana que te acompaña durante el recorrido.',
+    'Yallah Viajes organiza viajes y circuitos por Marruecos para viajeros que salen desde España. Nos ocupamos de todo: alojamiento, comidas, transporte y un conductor y guía de habla hispana que te acompaña durante el recorrido.',
   /**
    * Dominio canónico. Se resuelve en este orden:
    *   1. NEXT_PUBLIC_SITE_URL, si se define en el entorno.
@@ -44,10 +50,9 @@ export const site = {
 } as const
 
 export const contact = {
-  /** Dato real tomado del material de marca de Yalah Viajes. */
-  phoneDisplay: '+34 624 15 89 59',
-  phoneRaw: '+34624158959',
-  whatsappNumber: '34624158959',
+  phoneDisplay: '+34 645 19 65 93',
+  phoneRaw: '+34645196593',
+  whatsappNumber: '34645196593',
   email: 'pilararribas1996@gmail.com' as string | null,
   emailPlaceholder: '[EMAIL DE CONTACTO]',
   /** Población desde la que se organiza el viaje en España. */
@@ -58,8 +63,8 @@ export const contact = {
 export const social = [
   {
     name: 'Instagram',
-    handle: '@yalahviajes',
-    href: 'https://www.instagram.com/yalahviajes/',
+    handle: '@yallahviajes',
+    href: 'https://www.instagram.com/yallahviajes/',
   },
   // Añadir aquí Facebook o TikTok si la agencia abre perfil.
 ] as const
@@ -67,7 +72,7 @@ export const social = [
 /** Mensaje precargado para el enlace de WhatsApp. */
 export function whatsappUrl(message?: string) {
   const text =
-    message ?? 'Hola Yalah Viajes, me gustaría información sobre los viajes a Marruecos.'
+    message ?? 'Hola Yallah Viajes, me gustaría información sobre los viajes a Marruecos.'
   return `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(text)}`
 }
 

@@ -1,7 +1,7 @@
 import type { ImageKey } from './images'
 
 /**
- * Galería fotográfica. Todas las imágenes son material propio de Yalah Viajes
+ * Galería fotográfica. Todas las imágenes son material propio de Yallah Viajes
  * (dossieres de itinerarios y archivo de la agencia).
  */
 export type GalleryCategory = 'desierto' | 'marrakech' | 'rutas' | 'experiencias'

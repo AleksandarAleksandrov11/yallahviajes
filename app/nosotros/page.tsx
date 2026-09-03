@@ -14,7 +14,7 @@ import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Quiénes somos',
   description:
-    'Yalah Viajes organiza desde España viajes a Marruecos y acompaña a los viajeros sobre el terreno con conductor y guía de habla hispana. Así trabajamos.',
+    'Yallah Viajes organiza desde España viajes a Marruecos y acompaña a los viajeros sobre el terreno con conductor y guía de habla hispana. Así trabajamos.',
   path: '/nosotros',
   image: {
     url: '/img/dades-carretera-roja.jpg',
@@ -50,7 +50,7 @@ export default function NosotrosPage() {
         image="dades-carretera-roja"
         eyebrow="Quiénes somos"
         title="Organizamos tu viaje a Marruecos desde España."
-        lead="Yalah Viajes nace para que ir a Marruecos desde España sea sencillo, seguro y de verdad."
+        lead="Yallah Viajes nace para que ir a Marruecos desde España sea sencillo, seguro y de verdad."
         crumbs={[
           { label: 'Inicio', href: '/' },
           { label: 'Nosotros' },
@@ -66,7 +66,7 @@ export default function NosotrosPage() {
             <SplitText
               as="h2"
               by="line"
-              text={'«Yalah» significa\nvamos, en marcha.'}
+              text={'«Yallah» significa\nvamos, en marcha.'}
               className="mt-6 text-display leading-[1.06] text-ink"
             />
             <Reveal delay={0.1} className="mt-8 prose-editorial">
@@ -76,7 +76,7 @@ export default function NosotrosPage() {
                 exacto para lo que hacemos.
               </p>
               <p>
-                Yalah Viajes existe porque mucha gente en España quiere conocer Marruecos y no sabe
+                Yallah Viajes existe porque mucha gente en España quiere conocer Marruecos y no sabe
                 por dónde empezar: qué ruta hacer, dónde dormir en el desierto, si hará falta hablar
                 árabe, si es buena idea alquilar un coche. Nosotros resolvemos todo eso antes de que
                 cojas el vuelo.
@@ -241,7 +241,7 @@ export default function NosotrosPage() {
           </Reveal>
           <Reveal delay={0.14} className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <ButtonLink href="/contacto" size="lg" withArrow>
-              Hablar con Yalah Viajes
+              Hablar con Yallah Viajes
             </ButtonLink>
             <ButtonLink href={whatsappUrl()} variant="outline" size="lg">
               WhatsApp {contact.phoneDisplay}

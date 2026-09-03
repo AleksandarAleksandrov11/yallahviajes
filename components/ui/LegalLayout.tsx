@@ -100,7 +100,7 @@ export function LegalSection({
 export function Pending({ children }: { children: ReactNode }) {
   return (
     <span
-      title="Dato pendiente de facilitar por Yalah Viajes"
+      title="Dato pendiente de facilitar por Yallah Viajes"
       className="border-b border-dashed border-gold/70 bg-gold/8 px-1 font-medium text-gold-deep"
     >
       {children}

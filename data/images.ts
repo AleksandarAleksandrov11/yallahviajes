@@ -1,5 +1,5 @@
 // AUTOGENERADO por scripts/build-images.py — no editar a mano.
-// Todas las fotografías son material propio de Yalah Viajes.
+// Todas las fotografías son material propio de Yallah Viajes.
 export type ImageAsset = {
   src: string
   width: number

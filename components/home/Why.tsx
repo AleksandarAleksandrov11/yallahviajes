@@ -51,7 +51,7 @@ export function Why() {
           <div className="lg:col-span-7">
             <Reveal>
               <Eyebrow number="02" tone="light">
-                Por qué viajar con Yalah
+                Por qué viajar con Yallah
               </Eyebrow>
             </Reveal>
             <SplitText

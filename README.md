@@ -1,6 +1,6 @@
-# Yalah Viajes
+# Yallah Viajes
 
-Web oficial de **Yalah Viajes** — agencia que organiza viajes y circuitos por
+Web oficial de **Yallah Viajes** — agencia que organiza viajes y circuitos por
 Marruecos para viajeros que salen desde España.
 
 > Tu viaje a Marruecos, organizado desde España. *A un viaje de distancia.*
@@ -109,7 +109,7 @@ reutiliza con `<use>`, así no se repite su peso en cada cabecera y pie.
 
 ## Fotografía
 
-**Todas las imágenes son material propio de Yalah Viajes**, extraídas de los
+**Todas las imágenes son material propio de Yallah Viajes**, extraídas de los
 dossieres de itinerarios y del archivo de la agencia. No se ha usado ninguna
 fotografía de banco de imágenes.
 

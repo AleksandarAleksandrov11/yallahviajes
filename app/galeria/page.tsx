@@ -10,7 +10,7 @@ import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Galería de Marruecos',
   description:
-    'Fotografías del desierto de Merzouga, Marrakech, Aït Ben Haddou y las gargantas del Dades y del Todra, tomadas en los viajes que organiza Yalah Viajes.',
+    'Fotografías del desierto de Merzouga, Marrakech, Aït Ben Haddou y las gargantas del Dades y del Todra, tomadas en los viajes que organiza Yallah Viajes.',
   path: '/galeria',
   image: {
     url: '/img/amanecer-dunas.jpg',

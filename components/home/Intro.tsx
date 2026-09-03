@@ -27,7 +27,7 @@ export function HomeIntro() {
 
             <Reveal delay={0.1} className="mt-8 max-w-lg prose-editorial">
               <p>
-                Marruecos debe vivirse sin prisa y sin pelearse con la logística. Por eso Yalah
+                Marruecos debe vivirse sin prisa y sin pelearse con la logística. Por eso Yallah
                 Viajes prepara el viaje contigo desde España: ruta, alojamientos, tiempos, lo que te
                 apetece ver. Cuando aterrizas en Marrakech ya está todo resuelto.
               </p>
@@ -69,7 +69,7 @@ export function HomeIntro() {
             <Reveal delay={0.15}>
               <figure className="mt-10 border-l border-gold/45 pl-6">
                 <blockquote className="font-display text-2xl leading-snug text-ink italic md:text-[1.75rem]">
-                  «Yalah» es esa palabra que en Marruecos lo empuja todo: vamos, en marcha, adelante.
+                  «Yallah» es esa palabra que en Marruecos lo empuja todo: vamos, en marcha, adelante.
                 </blockquote>
                 <figcaption className="mt-4 text-[0.62rem] tracking-[0.22em] text-muted uppercase">
                   El nombre de la casa

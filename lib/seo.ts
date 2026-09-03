@@ -7,7 +7,7 @@ const OG_IMAGE = {
   url: '/img/desierto-caravana-dunas.jpg',
   width: 2200,
   height: 1468,
-  alt: 'Caravana de dromedarios en las dunas del Sahara marroquí — Yalah Viajes',
+  alt: 'Caravana de dromedarios en las dunas del Sahara marroquí — Yallah Viajes',
 }
 
 type PageSeo = {

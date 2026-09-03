@@ -4,7 +4,7 @@ import type { ImageKey } from './images'
  * ITINERARIOS DE YALAH VIAJES
  *
  * Todo el contenido de este fichero procede de los dossieres oficiales
- * facilitados por Yalah Viajes:
+ * facilitados por Yallah Viajes:
  *   · «VIAJE ESPECIAL DE 5 DÍAS / 4 NOCHES POR MARRUECOS»
  *   · «VIAJE ESPECIAL DE 6 DÍAS / 5 NOCHES POR MARRUECOS»
  *

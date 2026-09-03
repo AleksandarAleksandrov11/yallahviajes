@@ -1,7 +1,7 @@
 import type { ImageKey } from './images'
 
 /**
- * Destinos que aparecen realmente en los itinerarios de Yalah Viajes.
+ * Destinos que aparecen realmente en los itinerarios de Yallah Viajes.
  * No añadir lugares que no formen parte de ninguna ruta.
  */
 export type Destination = {

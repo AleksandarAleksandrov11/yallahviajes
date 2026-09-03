@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   ...pageMetadata({
     title: 'Aviso legal',
     description:
-      'Información legal del titular del sitio web de Yalah Viajes, condiciones de uso y propiedad intelectual.',
+      'Información legal del titular del sitio web de Yallah Viajes, condiciones de uso y propiedad intelectual.',
     path: '/legal/aviso-legal',
   }),
   robots: { index: false, follow: true },

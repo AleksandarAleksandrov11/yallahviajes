@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   ...pageMetadata({
     title: 'Política de cookies',
     description:
-      'Qué cookies y tecnologías similares utiliza la web de Yalah Viajes, para qué sirven y cómo cambiar tu decisión en cualquier momento.',
+      'Qué cookies y tecnologías similares utiliza la web de Yallah Viajes, para qué sirven y cómo cambiar tu decisión en cualquier momento.',
     path: '/legal/cookies',
   }),
   robots: { index: false, follow: true },

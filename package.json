@@ -1,8 +1,8 @@
 {
-  "name": "yalah-viajes",
+  "name": "yallah-viajes",
   "version": "1.0.0",
   "private": true,
-  "description": "Web oficial de Yalah Viajes — viajes organizados a Marruecos desde España.",
+  "description": "Web oficial de Yallah Viajes — viajes organizados a Marruecos desde España.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

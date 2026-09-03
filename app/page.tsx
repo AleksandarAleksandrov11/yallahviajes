@@ -13,7 +13,7 @@ import { JsonLd } from '@/components/ui/JsonLd'
 import { faqJsonLd, pageMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Yalah Viajes · Circuitos organizados a Marruecos desde España',
+  title: 'Yallah Viajes · Circuitos organizados a Marruecos desde España',
   description:
     'Circuitos organizados a Marruecos desde España: Marrakech, Aït Ben Haddou y noche en el desierto de Merzouga. Guía de habla hispana y todo incluido.',
   path: '/',

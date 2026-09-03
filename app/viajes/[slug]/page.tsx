@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       url: `/img/${tour.hero}.jpg`,
       width: 1200,
       height: 900,
-      alt: `${tour.name}, Yalah Viajes`,
+      alt: `${tour.name}, Yallah Viajes`,
     },
   })
 }
@@ -215,7 +215,7 @@ export default async function TourPage({ params }: Params) {
                     </ButtonLink>
                     <ButtonLink
                       href={whatsappUrl(
-                        `Hola Yalah Viajes, me interesa el viaje de ${tour.days} días (${tour.name}). ¿Podéis darme precio y disponibilidad?`,
+                        `Hola Yallah Viajes, me interesa el viaje de ${tour.days} días (${tour.name}). ¿Podéis darme precio y disponibilidad?`,
                       )}
                       variant="outline"
                       className="!text-gold-soft"
