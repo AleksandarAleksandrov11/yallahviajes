@@ -70,11 +70,22 @@ export function TourCard({ tour, index }: { tour: Tour; index: number }) {
 
         <div className="mt-auto flex items-end justify-between gap-6 border-t border-ink/10 pt-7">
           <p className="font-display text-xl text-ink">
-            {priceLabel(tour.price)}
-            {tour.price.from === null && (
-              <span className="mt-1 block font-sans text-[0.68rem] tracking-wide text-muted normal-case">
-                Escríbenos y te lo damos cerrado
-              </span>
+            {tour.price.from !== null ? (
+              <>
+                <span className="font-sans text-[0.62rem] tracking-[0.2em] text-muted uppercase">
+                  Desde
+                </span>
+                <span className="mt-1 block">
+                  {tour.price.from} € <span className="text-ink/55">por persona</span>
+                </span>
+              </>
+            ) : (
+              <>
+                {priceLabel(tour.price)}
+                <span className="mt-1 block font-sans text-[0.68rem] tracking-wide text-muted normal-case">
+                  Escríbenos y te lo damos cerrado
+                </span>
+              </>
             )}
           </p>
           <span className="inline-flex items-center gap-2.5 text-[0.68rem] font-medium tracking-[0.18em] text-ink uppercase">

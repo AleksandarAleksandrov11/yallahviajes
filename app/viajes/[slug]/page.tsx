@@ -158,14 +158,33 @@ export default async function TourPage({ params }: Params) {
                   <p className="text-[0.6rem] tracking-[0.24em] text-gold-soft uppercase">
                     {tour.days} días · {tour.nights} noches
                   </p>
-                  <p className="mt-4 font-display text-3xl leading-none text-sand">
-                    {priceLabel(tour.price)}
-                  </p>
-                  {tour.price.from === null && (
-                    <p className="mt-3 text-[0.85rem] leading-relaxed text-sand/58">
-                      El precio depende del número de viajeros y de las fechas. Escríbenos y te lo
-                      damos cerrado, por escrito y sin compromiso.
-                    </p>
+                  {tour.price.from !== null ? (
+                    <>
+                      <p className="mt-4 flex items-baseline gap-2.5 text-sand">
+                        <span className="font-sans text-[0.62rem] tracking-[0.2em] text-sand/58 uppercase">
+                          Desde
+                        </span>
+                        <span className="font-display text-4xl leading-none">
+                          {tour.price.from} €
+                        </span>
+                      </p>
+                      <p className="mt-2 text-[0.8rem] text-sand/58">{tour.price.unit}</p>
+                      {tour.price.note && (
+                        <p className="mt-3 text-[0.85rem] leading-relaxed text-sand/58">
+                          {tour.price.note}
+                        </p>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <p className="mt-4 font-display text-3xl leading-none text-sand">
+                        {priceLabel(tour.price)}
+                      </p>
+                      <p className="mt-3 text-[0.85rem] leading-relaxed text-sand/58">
+                        El precio depende del número de viajeros y de las fechas. Escríbenos y te lo
+                        damos cerrado, por escrito y sin compromiso.
+                      </p>
+                    </>
                   )}
 
                   <Divider className="my-7" tone="light" />

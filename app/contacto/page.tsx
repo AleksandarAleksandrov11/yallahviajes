@@ -140,7 +140,6 @@ export default function ContactoPage() {
                     <span>
                       <span className="block font-display text-xl text-ink">Horario</span>
                       <span className="mt-1 block text-[0.86rem] text-ink/68">
-                        {/* PENDIENTE: horario de atención facilitado por la agencia */}
                         {contact.hours ?? 'Escríbenos a cualquier hora: respondemos en menos de 24 h.'}
                       </span>
                     </span>

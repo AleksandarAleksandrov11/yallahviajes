@@ -185,6 +185,10 @@ con el fichero exacto donde va cada cosa.
 
 ## Regla de contenido
 
-No hay ni un dato inventado en esta web: ni precios, ni hoteles, ni años de
-experiencia, ni certificaciones. Cuando falta información, la web lo dice con
-claridad y ofrece la vía rápida para preguntarlo.
+Itinerarios, inclusiones, precios y datos de la titular son literales de los
+materiales de la agencia. No hay años de experiencia, cifras de viajeros ni
+certificaciones inventadas.
+
+Las políticas comerciales de la FAQ (grupos, fechas, reserva, cancelación) se
+redactaron a petición de la agencia y son compromisos públicos: ver la tabla de
+[CONTENIDO-PENDIENTE.md](./CONTENIDO-PENDIENTE.md).

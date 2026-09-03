@@ -8,9 +8,9 @@ import type { ImageKey } from './images'
  *   · «VIAJE ESPECIAL DE 5 DÍAS / 4 NOCHES POR MARRUECOS»
  *   · «VIAJE ESPECIAL DE 6 DÍAS / 5 NOCHES POR MARRUECOS»
  *
- * ⚠️  No se ha inventado ningún dato. Los campos con valor `null` están
- *     PENDIENTES de que la agencia los facilite (precios, hoteles concretos,
- *     tamaño de grupo, fechas de salida…). Ver CONTENIDO-PENDIENTE.md.
+ * Los itinerarios, las inclusiones y los lugares son literales del dossier.
+ * Los precios los ha facilitado la agencia y son compromisos públicos: si
+ * cambian, hay que cambiarlos también aquí y en la FAQ «¿Cuánto cuesta?».
  *
  * Para editar un viaje basta con modificar este fichero: las páginas
  * /viajes y /viajes/[slug] se generan automáticamente a partir de aquí.
@@ -37,12 +37,12 @@ export type ItineraryDay = {
 }
 
 export type Price = {
-  /** PENDIENTE: importe por persona. Mientras sea `null` la web muestra
-   *  «Precio a consultar» y dirige al formulario / WhatsApp. */
+  /** Precio «desde», por persona. Si fuese `null`, la web mostraría
+   *  «Precio a consultar» en lugar de inventar un importe. */
   from: number | null
   currency: 'EUR'
   unit: 'por persona'
-  /** Notas sobre el precio facilitadas por la agencia. PENDIENTE. */
+  /** Nota que acompaña al precio. */
   note: string | null
 }
 
@@ -79,12 +79,6 @@ export type Tour = {
   seo: { title: string; description: string }
 }
 
-const PRICE_PENDING: Price = {
-  from: null, // PENDIENTE — facilitar precio por persona
-  currency: 'EUR',
-  unit: 'por persona',
-  note: null, // PENDIENTE — p. ej. «mínimo 2 personas», temporada alta, etc.
-}
 
 /** Conceptos que el dossier NO recoge como incluidos. */
 const COMMON_NOT_INCLUDED = [
@@ -107,7 +101,12 @@ export const tours: Tour[] = [
     nights: 4,
     startsIn: 'Aeropuerto de Marrakech',
     endsIn: 'Aeropuerto de Marrakech',
-    price: PRICE_PENDING,
+    price: {
+      from: 275,
+      currency: 'EUR',
+      unit: 'por persona',
+      note: 'Precio por persona con todo lo indicado en «El viaje incluye».',
+    },
     route: ['Marrakech', 'Aït Ben Haddou', 'Valle del Dades', 'Gargantas del Todra', 'Merzouga'],
     experiences: [
       'Paseo en dromedario de una hora hasta el campamento',
@@ -217,8 +216,10 @@ export const tours: Tour[] = [
       'merzouga-caravana-atardecer',
       'musicos-bereberes',
       'te-menta',
+      'sandboard-atardecer',
+      'henna',
       'amanecer-viajera',
-      'jemaa-el-fna-noche',
+      'jemaa-el-fna-atardecer',
     ],
     seo: {
       title: 'Viaje a Marruecos 5 días: Marrakech y Merzouga',
@@ -238,7 +239,12 @@ export const tours: Tour[] = [
     nights: 5,
     startsIn: 'Aeropuerto de Marrakech',
     endsIn: 'Aeropuerto de Marrakech',
-    price: PRICE_PENDING,
+    price: {
+      from: 400,
+      currency: 'EUR',
+      unit: 'por persona',
+      note: 'Precio por persona con todo lo indicado en «El viaje incluye».',
+    },
     route: [
       'Marrakech',
       'Aït Ben Haddou',
@@ -360,8 +366,9 @@ export const tours: Tour[] = [
     ],
     gallery: [
       'erg-chebbi',
-      'camellos-sombras',
-      'quad-dunas',
+      'dromedario-amanecer',
+      'quad-atardecer',
+      'henna',
       'musicos-bereberes',
       'jaima-nomada',
       'cielo-estrellado',

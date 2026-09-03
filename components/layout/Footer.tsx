@@ -98,8 +98,6 @@ export function Footer() {
                   </a>
                 </li>
               ))}
-              {/* PENDIENTE: en cuanto la agencia facilite el correo, aparece aquí.
-                  Hasta entonces no mostramos un marcador vacío al visitante. */}
               {contact.email && (
                 <li>
                   <a

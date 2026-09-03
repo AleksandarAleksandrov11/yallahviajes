@@ -1,8 +1,14 @@
 # Contenido pendiente y pasos para publicar
 
-Esta web está construida con **una regla estricta: no se ha inventado ningún dato**.
-Todo lo publicado procede de los materiales de Yalah Viajes (los dos dossieres de
-itinerarios, el material de marca y los datos facilitados por la titular).
+Los itinerarios, las inclusiones, los precios y los datos de la titular proceden
+de los materiales facilitados por Yalah Viajes y son literales.
+
+**Las políticas comerciales sí se han redactado desde cero** a petición de la
+agencia, para no dejar huecos en la web: grupos, fechas de salida, proceso de
+reserva, cancelación y adaptación de menús. Son condiciones razonables y
+habituales en este tipo de circuito, pero **hay que leerlas y confirmarlas**:
+una vez publicadas son compromisos frente al cliente. Están todas en la tabla
+del apartado 1.
 
 ---
 
@@ -23,24 +29,23 @@ Si no se define, se usa el dominio de producción que asigna Vercel.
 2. Crear una ficha de **Google Business Profile**. Los datos estructurados de la
    web ya declaran dirección, teléfono y correo, así que ambos coincidirán.
 
-### Precios (recomendable, no bloquea)
+### Revisar los compromisos publicados
 
-Cada viaje tiene `price.from = null` en `data/tours.ts`. Mientras siga así, la
-web muestra **«Precio a consultar»** y lleva al formulario y a WhatsApp. Para
-publicar el importe:
+Estos datos ya están publicados y son **compromisos públicos**. Si alguno no
+coincide con cómo trabajáis, hay que corregirlo antes de dar difusión al sitio:
 
-```ts
-price: {
-  from: 000,                  // importe por persona
-  currency: 'EUR',
-  unit: 'por persona',
-  note: 'Mínimo 2 personas',  // o lo que corresponda
-}
-```
+| Dato | Dónde | Valor publicado |
+| --- | --- | --- |
+| Precio ruta 5 días | `data/tours.ts` | Desde 275 € por persona |
+| Precio ruta 6 días | `data/tours.ts` | Desde 400 € por persona |
+| Grupos | `data/faq.ts` | Viajes privados, solo tu grupo |
+| Fechas | `data/faq.ts` | Sin calendario fijo, cualquier día del año |
+| Reserva | `data/faq.ts` | Señal por transferencia; resto a la llegada |
+| Cancelación | `data/faq.ts` | +15 días: señal íntegra · 15-7 días: se retiene lo comprometido · −7 días: sin devolución |
+| Horario | `data/site.ts` | Todos los días, 9:00-21:00 |
 
-En cuanto `from` deje de ser `null`, el precio aparece en las tarjetas, en la
-comparativa, en la ficha del viaje y en los datos estructurados de Google
-(que hoy se omiten a propósito para no dar un precio falso).
+El precio alimenta también los datos estructurados de Google (`offers`), así que
+un precio desactualizado se muestra en los resultados de búsqueda.
 
 ---
 
@@ -50,9 +55,14 @@ Todas las fotos actuales son material propio de Yalah Viajes, extraídas de los
 dossieres y del archivo de la agencia. **No se usa ninguna imagen de banco**, y
 así lo declara el aviso legal.
 
-Doce de ellas vienen de los PDF y son de baja resolución (324-605 px). Ya se han
-sacado de los huecos grandes, pero conviene sustituirlas por el original en alta
-cuando esté disponible:
+En la segunda entrega llegaron cinco fotos en alta resolución que ya están
+integradas: dromedario al amanecer, Jemaa el-Fna al atardecer, quads, sandboard
+y henna. Las dos últimas cubren experiencias que aparecen en los itinerarios y
+de las que no había foto.
+
+Once fotos vienen de los PDF y siguen siendo de baja resolución (324-605 px).
+Ya se han sacado de los huecos grandes, pero conviene sustituirlas por el
+original en alta cuando esté disponible:
 
 | Imagen | Resolución | Dónde se usa |
 | --- | --- | --- |
@@ -76,36 +86,20 @@ python3 scripts/build-images.py
 # 2. Regenera public/img/*.jpg y data/images.ts con sus blur placeholders
 ```
 
-Faltan fotos propias de dos experiencias que sí están en los itinerarios:
-**sandboard** (ruta de 5 días) y **tatuajes de henna** (ambas rutas).
+Todas las experiencias de los itinerarios tienen ya foto propia.
 
 ---
 
-## 3. Respuestas de FAQ pendientes
+## 3. Preguntas frecuentes
 
-En `data/faq.ts`, las preguntas con `answer: null` muestran un aviso honesto
-(«estamos completando esta respuesta») con acceso directo a WhatsApp, en lugar
-de un dato inventado. Faltan:
-
-- ¿Cuántas personas forman el grupo?
-- ¿Hay fechas de salida fijas?
-- ¿En qué hoteles y riads nos alojamos?
-- ¿Podéis adaptar el menú a alergias, dietas o comida vegetariana?
-- ¿Cuánto cuesta el viaje?
-- ¿Cómo se reserva? (proceso, señal, formas de pago)
-- ¿Qué política de cancelación tenéis?
-- ¿Qué documentación necesito para viajar a Marruecos desde España?
-- ¿Qué moneda se usa y dónde se cambia?
-
-Sustituir `answer: null` por el texto real. Las ya respondidas alimentan el
-structured data `FAQPage` de Google; las pendientes se excluyen a propósito.
+Las 21 preguntas están respondidas y alimentan el structured data `FAQPage` de
+Google. Las de precio, reserva, cancelación y grupos son compromisos públicos:
+ver la tabla del apartado 1.
 
 ---
 
 ## 4. Otros datos opcionales
 
-- **Horario de atención** — `data/site.ts` → `contact.hours`. Si es `null`, la
-  página de contacto dice «respondemos en menos de 24 h».
 - **Redes sociales** — `data/site.ts` → `social`. Solo está Instagram.
 - **Título de agencia de viajes** — `data/legal.ts` →
   `travelAgencyLicence`. Si la actividad requiere título administrativo

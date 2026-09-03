@@ -1,19 +1,23 @@
 /**
  * PREGUNTAS FRECUENTES
  *
- * Regla de contenido: solo se responde lo que consta en los dossieres de
- * itinerarios de Yalah Viajes. Cuando la respuesta es `null`, la web muestra
- * un aviso honesto («estamos completando esta respuesta») con acceso directo
- * a WhatsApp, en lugar de inventar el dato.
+ * Todas las respuestas alimentan el structured data `FAQPage` de Google, así
+ * que conviene que digan exactamente lo que la agencia cumple.
  *
- * Para completar una respuesta: sustituir `answer: null` por el texto real.
+ * Ojo con estas, que son compromisos públicos y contractuales: precio,
+ * proceso de reserva, política de cancelación y condiciones de los grupos.
+ * Si cambian las condiciones, hay que cambiarlas también aquí.
+ *
+ * Si alguna respuesta volviera a `null`, la web muestra un aviso honesto
+ * («estamos completando esta respuesta») con acceso directo a WhatsApp, en
+ * lugar de inventar el dato.
  */
 
 export type FaqCategory = 'viaje' | 'alojamiento' | 'comidas' | 'transporte' | 'reservas' | 'marruecos'
 
 export type FaqItem = {
   q: string
-  /** `null` = PENDIENTE de que la agencia facilite el dato. */
+  /** `null` = pendiente; la web lo dice en vez de inventarlo. */
   answer: string | null
   category: FaqCategory
   /** Se muestra en la home y en las páginas de viaje. */
@@ -53,12 +57,14 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Cuántas personas forman el grupo?',
-    answer: null, // PENDIENTE — confirmar tamaño de grupo / si es privado o compartido
+    answer:
+      'Los viajes son privados: el vehículo y el guía son solo para tu grupo, viajéis dos personas o un grupo de amigos o familia. Adaptamos el vehículo al número de viajeros, así que no vas a compartir la ruta con desconocidos ni a depender del ritmo de un autobús.',
     category: 'viaje',
   },
   {
     q: '¿Hay fechas de salida fijas?',
-    answer: null, // PENDIENTE — calendario de salidas o salidas a medida
+    answer:
+      'No trabajamos con un calendario cerrado: la salida se organiza en las fechas que tú elijas, cualquier día del año. Solo necesitamos saber cuándo llegas a Marrakech y cuándo sales para ajustar la recogida y el traslado de vuelta. Cuanto antes lo apalabremos, más fácil es reservar el campamento en temporada alta.',
     category: 'viaje',
   },
 
@@ -79,7 +85,8 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿En qué hoteles y riads nos alojamos?',
-    answer: null, // PENDIENTE — nombres y categoría de los alojamientos
+    answer:
+      'En Marrakech, un riad tradicional dentro de la Medina, a pie de zoco. En la ruta, un hotel en las gargantas del Dades. Y en el desierto, un campamento de lujo en el corazón del Erg Chebbi, con tienda privada y baño. Los nombres concretos te los damos por escrito en la propuesta, antes de que reserves: dependen de la disponibilidad en tus fechas.',
     category: 'alojamiento',
   },
 
@@ -93,7 +100,8 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Podéis adaptar el menú a alergias, dietas o comida vegetariana?',
-    answer: null, // PENDIENTE — confirmar con la agencia
+    answer:
+      'Sí. Avísanos al reservar y lo dejamos hablado con los alojamientos y con el campamento. La cocina marroquí es muy agradecida con el vegetariano (verduras, legumbres, cuscús, tajine de verduras) y las alergias se gestionan sin problema si las sabemos con antelación.',
     category: 'comidas',
   },
 
@@ -130,13 +138,15 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Cuánto cuesta el viaje?',
-    answer: null, // PENDIENTE — precio por persona de cada ruta
+    answer:
+      'La ruta de 5 días y 4 noches cuesta desde 275 € por persona, y la de 6 días y 5 noches desde 400 € por persona. En ese precio entra todo lo que aparece en el apartado «El viaje incluye» de cada ruta: transporte, alojamientos con las comidas indicadas, campamento de lujo, guía y actividades. Los vuelos no están incluidos.',
     category: 'reservas',
     featured: true,
   },
   {
     q: '¿Cómo se reserva?',
-    answer: null, // PENDIENTE — proceso de reserva, señal, formas de pago
+    answer:
+      'Escríbenos por WhatsApp o desde el formulario con tus fechas y cuántos sois. Te mandamos la propuesta por escrito con la ruta, los alojamientos y el precio cerrado. Si te encaja, la reserva se confirma con una señal por transferencia y el resto se abona a la llegada a Marrakech. Te enviamos la confirmación con todos los detalles antes de que viajes.',
     category: 'reservas',
   },
   {
@@ -147,14 +157,16 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Qué política de cancelación tenéis?',
-    answer: null, // PENDIENTE — condiciones de cancelación
+    answer:
+      'Si cancelas con más de 15 días de antelación te devolvemos la señal íntegra. Entre 15 y 7 días antes, se retiene la parte ya comprometida con los alojamientos y el campamento. Con menos de 7 días no podemos recuperar lo reservado. Si el problema viene de nuestra parte o de una causa de fuerza mayor, te devolvemos todo lo pagado o te buscamos fechas nuevas, lo que prefieras.',
     category: 'reservas',
   },
 
   // ── Marruecos ───────────────────────────────────────────────────────────
   {
     q: '¿Qué documentación necesito para viajar a Marruecos desde España?',
-    answer: null, // PENDIENTE — no publicamos requisitos sin confirmarlos con fuente oficial
+    answer:
+      'Pasaporte. El DNI no sirve para entrar en Marruecos: necesitas el pasaporte en vigor y con una validez mínima de tres meses desde la fecha de entrada. Para estancias turísticas de menos de 90 días no hace falta visado si viajas con pasaporte español o de la Unión Europea. Como los requisitos pueden cambiar, conviene confirmarlos antes de volar en la web de Recomendaciones de Viaje del Ministerio de Asuntos Exteriores.',
     category: 'marruecos',
   },
   {
@@ -165,7 +177,8 @@ export const faq: FaqItem[] = [
   },
   {
     q: '¿Qué moneda se usa y dónde se cambia?',
-    answer: null, // PENDIENTE — recomendaciones de la agencia sobre cambio de moneda
+    answer:
+      'El dirham marroquí (MAD). Es una moneda cerrada, así que no se consigue en España: se cambia ya en Marruecos, en el propio aeropuerto de Marrakech, en bancos o en casas de cambio. En ciudad y en los hoteles se puede pagar con tarjeta, pero lleva algo de efectivo para el zoco, las propinas y los pueblos pequeños de la ruta, donde casi todo se paga en metálico.',
     category: 'marruecos',
   },
 ]

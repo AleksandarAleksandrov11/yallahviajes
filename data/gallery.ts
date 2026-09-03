@@ -25,9 +25,13 @@ export const galleryCategories: { id: GalleryCategory | 'todo'; label: string }[
 
 export const gallery: GalleryItem[] = [
   { key: 'desierto-caravana-dunas', caption: 'Camino del campamento', place: 'Erg Chebbi, Merzouga', category: 'desierto', span: 'wide' },
+  { key: 'dromedario-amanecer', caption: 'Listos antes del amanecer', place: 'Merzouga', category: 'desierto', span: 'tall' },
   { key: 'amanecer-viajera', caption: 'El amanecer se espera sentado', place: 'Merzouga', category: 'desierto', span: 'tall' },
   { key: 'ait-ben-haddou', caption: 'El ksar de tierra', place: 'Aït Ben Haddou', category: 'rutas', span: 'big' },
   { key: 'te-menta', caption: 'Té a la menta', place: 'Campamento del desierto', category: 'experiencias' },
+  { key: 'henna', caption: 'Tatuajes de henna', place: 'Jemaa el-Fna, Marrakech', category: 'experiencias', span: 'tall' },
+  { key: 'sandboard-atardecer', caption: 'La tabla y el atardecer', place: 'Erg Chebbi', category: 'experiencias', span: 'tall' },
+  { key: 'quad-atardecer', caption: 'Quads al caer el sol', place: 'Merzouga', category: 'experiencias', span: 'tall' },
   { key: 'jemaa-el-fna-noche', caption: 'La plaza se enciende', place: 'Jemaa el-Fna, Marrakech', category: 'marrakech' },
   { key: 'erg-chebbi', caption: 'Mar de dunas', place: 'Erg Chebbi', category: 'desierto', span: 'tall' },
   { key: 'dades-carretera-roja', caption: 'La carretera del Dades', place: 'Gargantas del Dades', category: 'rutas', span: 'tall' },

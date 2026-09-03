@@ -1,7 +1,7 @@
-from PIL import Image, ImageFilter
+from PIL import Image, ImageFilter, ImageOps
 import os, json, base64, io
 
-SRC_RAW="raw"; SRC_WT="wt"
+SRC_RAW="raw"; SRC_WT="wt"; SRC_NEW="nuevas"
 OUT="/home/user/yallahviajes/public/img"
 os.makedirs(OUT, exist_ok=True)
 
@@ -34,15 +34,22 @@ MAP = [
  ("duna-caminando",               f"{SRC_WT}/image00002.jpeg"),
  ("camellos-cielo-azul",          f"{SRC_WT}/image00003.jpeg"),
  ("quad-dunas",                   f"{SRC_WT}/image00004.jpeg"),
- ("jemaa-el-fna-atardecer",       f"{SRC_WT}/image00005.jpeg"),
  ("amanecer-dunas",               f"{SRC_WT}/image00006.jpeg"),
  ("amanecer-viajera",             f"{SRC_WT}/image00007.jpeg"),
  ("cielo-estrellado",             f"{SRC_WT}/image00008.jpeg"),
+
+ # --- Segunda entrega de la agencia -------------------------------------
+ ("dromedario-amanecer",          f"{SRC_NEW}/dc99f888-aff9-42ed-b44e-f6c9da1c7ce5.jpeg"),
+ ("jemaa-el-fna-atardecer",       f"{SRC_NEW}/IMG_1514.jpeg"),
+ ("quad-atardecer",               f"{SRC_NEW}/IMG_1035.jpeg"),
+ ("sandboard-atardecer",          f"{SRC_NEW}/5F8D9BE3-F623-48B3-A5ED-DD08648A509F.png"),
+ ("henna",                        f"{SRC_NEW}/IMG_0846.jpeg"),
 ]
 
 meta={}
 for slug, path in MAP:
-    im = Image.open(path).convert("RGB")
+    # exif_transpose respeta la orientación con la que se hizo la foto
+    im = ImageOps.exif_transpose(Image.open(path)).convert("RGB")
     w,h = im.size
     # cap the long edge at 2200 for the web, keep quality high
     MAXL = 2200

@@ -1,8 +1,7 @@
 /**
  * Configuración global de la marca y datos de contacto.
  *
- * ⚠️  Los valores marcados como PENDIENTE están a la espera de que Yalah Viajes
- *     los facilite. Ver CONTENIDO-PENDIENTE.md en la raíz del proyecto.
+ * Todos los datos son reales y facilitados por Yalah Viajes.
  */
 
 /** Normaliza a `https://dominio` sin barra final. */
@@ -53,8 +52,7 @@ export const contact = {
   emailPlaceholder: '[EMAIL DE CONTACTO]',
   /** Población desde la que se organiza el viaje en España. */
   baseLocation: 'Fuente el Fresno, Ciudad Real' as string | null,
-  /** Horario de atención — PENDIENTE de confirmar. */
-  hours: null as string | null,
+  hours: 'Todos los días, de 9:00 a 21:00 (hora peninsular).' as string | null,
 } as const
 
 export const social = [
@@ -63,7 +61,7 @@ export const social = [
     handle: '@yalahviajes',
     href: 'https://www.instagram.com/yalahviajes/',
   },
-  // PENDIENTE: Facebook, TikTok u otros perfiles, si existen.
+  // Añadir aquí Facebook o TikTok si la agencia abre perfil.
 ] as const
 
 /** Mensaje precargado para el enlace de WhatsApp. */
