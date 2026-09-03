@@ -53,7 +53,7 @@ export const contact = {
   phoneDisplay: '+34 645 19 65 93',
   phoneRaw: '+34645196593',
   whatsappNumber: '34645196593',
-  email: 'pilararribas1996@gmail.com' as string | null,
+  email: 'yallahviajes@gmail.com' as string | null,
   emailPlaceholder: '[EMAIL DE CONTACTO]',
   /** Población desde la que se organiza el viaje en España. */
   baseLocation: 'Fuente el Fresno, Ciudad Real' as string | null,
