@@ -155,10 +155,10 @@ function StickyFrame({
   const asset = images[image]
 
   return (
-    <motion.div className="absolute inset-0" style={{ opacity }} aria-hidden="true">
+    <motion.div className="absolute inset-0" style={{ opacity }}>
       <Image
         src={asset.src}
-        alt=""
+        alt={asset.alt}
         fill
         sizes="42vw"
         quality={80}

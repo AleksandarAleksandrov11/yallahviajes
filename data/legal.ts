@@ -1,13 +1,12 @@
 /**
  * DATOS LEGALES DEL TITULAR DEL SITIO
  *
- * ⚠️  TODOS los campos marcados como PENDIENTE deben rellenarse con los datos
- *     reales de Yalah Viajes ANTES de publicar la web. La LSSI-CE (art. 10)
- *     obliga a mostrar la identificación del prestador de servicios, y el
- *     RGPD (arts. 13-14) obliga a identificar al responsable del tratamiento.
+ * La LSSI-CE (art. 10) obliga a mostrar la identificación del prestador de
+ * servicios, y el RGPD (arts. 13-14) obliga a identificar al responsable del
+ * tratamiento. Ambos quedan cubiertos con los datos de abajo.
  *
- *     Mientras un campo valga `null`, la web muestra el marcador entre
- *     corchetes en lugar de inventar un dato.
+ * Si algún campo vuelve a `null`, la web muestra un marcador visible en lugar
+ * de inventar el dato.
  */
 
 export type LegalHolder = {
@@ -36,18 +35,20 @@ export type LegalHolder = {
 }
 
 export const legal: LegalHolder = {
-  legalName: null, // PENDIENTE — razón social o nombre del titular
+  legalName: 'María del Pilar Arribas Muñoz',
   tradeName: 'Yalah Viajes',
-  taxId: null, // PENDIENTE — NIF/CIF
-  address: null, // PENDIENTE — domicilio completo
-  email: null, // PENDIENTE — correo de contacto legal
+  taxId: '05723254A',
+  address: 'Avenida de España 56, 13130 Fuente el Fresno (Ciudad Real), España',
+  email: 'pilararribas1996@gmail.com',
   phone: '+34 624 15 89 59',
-  registry: null, // PENDIENTE — datos registrales, si procede
-  travelAgencyLicence: null, // PENDIENTE — nº de licencia de agencia de viajes
+  /** Persona física: no procede inscripción registral. */
+  registry: null,
+  /** Pendiente de facilitar si la actividad requiere título administrativo. */
+  travelAgencyLicence: null,
   host: 'Vercel Inc.',
   hostAddress: '340 S Lemon Ave #4133, Walnut, CA 91789 (Estados Unidos)',
   hostPrivacyUrl: 'https://vercel.com/legal/privacy-policy',
-  lastUpdated: '2026-08-26',
+  lastUpdated: '2026-09-03',
 }
 
 /** Devuelve el dato o un marcador visible si todavía está pendiente. */

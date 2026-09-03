@@ -140,7 +140,9 @@ export function Destinations() {
                     <span className="text-[0.55rem] tracking-[0.2em] text-gold-soft uppercase">
                       {String(i + 1).padStart(2, '0')} · {dest.kicker}
                     </span>
-                    <h3 className="mt-1.5 font-display text-2xl text-sand">{dest.name}</h3>
+                    {/* Rótulo visual, no encabezado: en escritorio este mismo
+                        destino ya se lista como texto dentro del índice. */}
+                    <p className="mt-1.5 font-display text-2xl text-sand">{dest.name}</p>
                   </div>
                 </div>
                 <p className="mt-3.5 text-[0.9rem] leading-relaxed text-ink/68">{dest.description}</p>

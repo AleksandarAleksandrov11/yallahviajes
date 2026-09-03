@@ -24,7 +24,7 @@ export function FinalCta() {
       <motion.div className="absolute inset-0" style={reduced ? undefined : { y, scale: 1.14 }}>
         <Image
           src={BG.src}
-          alt=""
+          alt={BG.alt}
           fill
           sizes="100vw"
           quality={82}

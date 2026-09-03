@@ -57,22 +57,20 @@ export default function AvisoLegalPage() {
           </li>
           <li>
             <strong className="font-medium text-ink">Datos registrales:</strong>{' '}
-            {legal.registry ?? <P>DATOS REGISTRALES, SI PROCEDE</P>}
+            {legal.registry ?? 'No procede: el titular es una persona física.'}
           </li>
-          <li>
-            <strong className="font-medium text-ink">
-              Título administrativo de agencia de viajes:
-            </strong>{' '}
-            {legal.travelAgencyLicence ?? <P>Nº DE LICENCIA / CÓDIGO DE AGENCIA DE VIAJES</P>}
-          </li>
+          {legal.travelAgencyLicence && (
+            <li>
+              <strong className="font-medium text-ink">
+                Título administrativo de agencia de viajes:
+              </strong>{' '}
+              {legal.travelAgencyLicence}
+            </li>
+          )}
           <li>
             <strong className="font-medium text-ink">Sitio web:</strong> {site.url}
           </li>
         </ul>
-        <p className="text-[0.9rem] text-muted">
-          Los campos resaltados están pendientes de completar con los datos registrales definitivos
-          antes de la publicación del sitio.
-        </p>
       </LegalSection>
 
       <LegalSection n="02" title="Alojamiento">

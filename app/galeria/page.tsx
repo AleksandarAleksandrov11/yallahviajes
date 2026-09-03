@@ -26,8 +26,8 @@ export default function GaleriaPage() {
       <PageHero
         image="erg-chebbi"
         eyebrow="Galería"
-        title="Marruecos, tal y como lo vemos nosotros."
-        lead="Todas estas fotografías están hechas en nuestras rutas. Ninguna es de banco de imágenes."
+        title="Fotos de Marruecos hechas en nuestros viajes."
+        lead="Todas estas fotos están hechas en nuestras rutas. Ninguna es de banco de imágenes."
         crumbs={[
           { label: 'Inicio', href: '/' },
           { label: 'Galería' },

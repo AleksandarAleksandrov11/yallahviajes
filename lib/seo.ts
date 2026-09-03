@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { legal } from '@/data/legal'
 import { contact, site, social } from '@/data/site'
 import { tours } from '@/data/tours'
 
@@ -41,19 +42,34 @@ export function pageMetadata({ title, description, path, image = OG_IMAGE }: Pag
   }
 }
 
-/** Ficha de la organización: se inyecta una sola vez, en el layout raíz. */
+/**
+ * Ficha de la organización: se inyecta una sola vez, en el layout raíz.
+ * Incluye dirección y datos de contacto reales, que es lo que Google usa
+ * para el panel de negocio y para el posicionamiento local.
+ */
 export function organizationJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'TravelAgency',
     '@id': `${site.url}#organizacion`,
     name: site.name,
+    legalName: legal.legalName ?? undefined,
+    taxID: legal.taxId ?? undefined,
     url: site.url,
     description: site.description,
     slogan: site.tagline,
     logo: `${site.url}/brand/mark.svg`,
     image: `${site.url}${OG_IMAGE.url}`,
     telephone: contact.phoneRaw,
+    email: contact.email ?? undefined,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Avenida de España 56',
+      addressLocality: 'Fuente el Fresno',
+      addressRegion: 'Ciudad Real',
+      postalCode: '13130',
+      addressCountry: 'ES',
+    },
     sameAs: social.map((s) => s.href),
     areaServed: [
       { '@type': 'Country', name: 'España' },
@@ -61,6 +77,27 @@ export function organizationJsonLd() {
     ],
     knowsLanguage: ['es', 'ar', 'fr'],
     availableLanguage: 'es',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'reservas y atención al cliente',
+      telephone: contact.phoneRaw,
+      email: contact.email ?? undefined,
+      availableLanguage: ['es'],
+      areaServed: 'ES',
+    },
+  }
+}
+
+/** Ficha del sitio: ayuda a Google a mostrar el nombre de marca correcto. */
+export function websiteJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${site.url}#sitio`,
+    url: site.url,
+    name: site.name,
+    inLanguage: 'es-ES',
+    publisher: { '@id': `${site.url}#organizacion` },
   }
 }
 

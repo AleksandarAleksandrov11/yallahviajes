@@ -12,7 +12,7 @@ import { Navbar } from '@/components/layout/Navbar'
 import { WhatsAppFab } from '@/components/layout/WhatsAppFab'
 import { site } from '@/data/site'
 import { JsonLd } from '@/components/ui/JsonLd'
-import { organizationJsonLd } from '@/lib/seo'
+import { organizationJsonLd, websiteJsonLd } from '@/lib/seo'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -31,7 +31,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'Yalah Viajes · Viajes organizados a Marruecos desde España',
+    default: 'Yalah Viajes · Circuitos organizados a Marruecos desde España',
     template: '%s | Yalah Viajes',
   },
   description: site.description,
@@ -83,6 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ConsentedAnalytics />
         </ConsentProvider>
         <JsonLd data={organizationJsonLd()} />
+        <JsonLd data={websiteJsonLd()} />
       </body>
     </html>
   )

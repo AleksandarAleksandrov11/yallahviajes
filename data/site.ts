@@ -5,6 +5,22 @@
  *     los facilite. Ver CONTENIDO-PENDIENTE.md en la raíz del proyecto.
  */
 
+/** Normaliza a `https://dominio` sin barra final. */
+function normalize(url: string) {
+  const withProtocol = url.startsWith('http') ? url : `https://${url}`
+  return withProtocol.replace(/\/+$/, '')
+}
+
+function resolveSiteUrl() {
+  const explicit = process.env.NEXT_PUBLIC_SITE_URL
+  if (explicit) return normalize(explicit)
+
+  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL
+  if (vercel) return normalize(vercel)
+
+  return 'https://www.yalahviajes.com'
+}
+
 export const site = {
   name: 'Yalah Viajes',
   /** Wordmark tal y como aparece en el logotipo original. */
@@ -14,8 +30,16 @@ export const site = {
   shortDescription: 'Tu viaje a Marruecos, organizado desde España.',
   description:
     'Yalah Viajes organiza viajes y circuitos por Marruecos para viajeros que salen desde España. Nos ocupamos de todo: alojamiento, comidas, transporte y un conductor y guía de habla hispana que te acompaña durante el recorrido.',
-  /** Cambiar por el dominio definitivo antes de publicar. */
-  url: 'https://www.yalahviajes.com',
+  /**
+   * Dominio canónico. Se resuelve en este orden:
+   *   1. NEXT_PUBLIC_SITE_URL, si se define en el entorno.
+   *   2. El dominio de producción que asigna Vercel al proyecto.
+   *   3. El dominio definitivo, como último recurso.
+   *
+   * Así el canonical, el sitemap y las Open Graph siempre apuntan al dominio
+   * real desde el que se sirve la web, y no a uno distinto.
+   */
+  url: resolveSiteUrl(),
   locale: 'es_ES',
   lang: 'es',
 } as const
@@ -25,11 +49,10 @@ export const contact = {
   phoneDisplay: '+34 624 15 89 59',
   phoneRaw: '+34624158959',
   whatsappNumber: '34624158959',
-  /** PENDIENTE: correo electrónico oficial de la agencia. */
-  email: null as string | null,
+  email: 'pilararribas1996@gmail.com' as string | null,
   emailPlaceholder: '[EMAIL DE CONTACTO]',
-  /** PENDIENTE: población / provincia desde la que se atiende en España. */
-  baseLocation: null as string | null,
+  /** Población desde la que se organiza el viaje en España. */
+  baseLocation: 'Fuente el Fresno, Ciudad Real' as string | null,
   /** Horario de atención — PENDIENTE de confirmar. */
   hours: null as string | null,
 } as const

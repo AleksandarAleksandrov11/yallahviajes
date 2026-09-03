@@ -13,9 +13,9 @@ import { JsonLd } from '@/components/ui/JsonLd'
 import { faqJsonLd, pageMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Yalah Viajes · Viajes organizados a Marruecos desde España',
+  title: 'Yalah Viajes · Circuitos organizados a Marruecos desde España',
   description:
-    'Viajes y circuitos organizados a Marruecos desde España: Marrakech, Aït Ben Haddou, gargantas del Dades y del Todra y noche en el desierto de Merzouga. Alojamiento, comidas, transporte y conductor y guía de habla hispana incluidos.',
+    'Circuitos organizados a Marruecos desde España: Marrakech, Aït Ben Haddou y noche en el desierto de Merzouga. Guía de habla hispana y todo incluido.',
   path: '/',
 })
 

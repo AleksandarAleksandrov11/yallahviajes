@@ -12,9 +12,9 @@ import { tours } from '@/data/tours'
 import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Viajes organizados a Marruecos desde España',
+  title: 'Circuitos organizados a Marruecos desde España',
   description:
-    'Dos circuitos por Marruecos con salida desde Marrakech: 5 días con una noche en el desierto de Merzouga o 6 días con dos noches y excursión en 4x4. Alojamiento, comidas, transporte y guía de habla hispana.',
+    'Dos rutas por Marruecos desde Marrakech: 5 días con una noche en el desierto de Merzouga o 6 días con dos noches y excursión en 4x4.',
   path: '/viajes',
 })
 
@@ -24,7 +24,7 @@ export default function ViajesPage() {
       <PageHero
         image="dunas-caravana-amplia"
         eyebrow="Nuestros viajes"
-        title="Dos rutas al desierto. Elige cuánto tiempo quieres quedarte."
+        title="Dos rutas por Marruecos, del Alto Atlas al desierto de Merzouga."
         lead="Las dos empiezan y terminan en Marrakech, cruzan el Alto Atlas y llegan hasta las dunas del Erg Chebbi. Cambia lo que haces cuando llegas allí."
         crumbs={[
           { label: 'Inicio', href: '/' },
@@ -60,8 +60,8 @@ export default function ViajesPage() {
             />
             <Reveal delay={0.1}>
               <p className="mt-6 prose-editorial">
-                Sin letra pequeña. Esto es exactamente lo que entra en cada ruta, tal y como figura
-                en nuestros itinerarios.
+                Sin letra pequeña. Esto es exactamente lo que entra en las dos rutas, tal y como
+                figura en nuestros itinerarios.
               </p>
             </Reveal>
           </div>

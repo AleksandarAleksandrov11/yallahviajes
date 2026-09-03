@@ -17,10 +17,10 @@ export const metadata: Metadata = pageMetadata({
     'Yalah Viajes organiza desde España viajes a Marruecos y acompaña a los viajeros sobre el terreno con conductor y guía de habla hispana. Así trabajamos.',
   path: '/nosotros',
   image: {
-    url: '/img/valle-pueblo.jpg',
-    width: 432,
-    height: 432,
-    alt: 'Pueblo bereber al pie de las gargantas',
+    url: '/img/dades-carretera-roja.jpg',
+    width: 1200,
+    height: 1800,
+    alt: 'Carretera entre las paredes rojizas del valle del Dades',
   },
 })
 
@@ -49,7 +49,7 @@ export default function NosotrosPage() {
       <PageHero
         image="dades-carretera-roja"
         eyebrow="Quiénes somos"
-        title="Una agencia pequeña con un equipo grande en Marruecos."
+        title="Organizamos tu viaje a Marruecos desde España."
         lead="Yalah Viajes nace para que ir a Marruecos desde España sea sencillo, seguro y de verdad."
         crumbs={[
           { label: 'Inicio', href: '/' },

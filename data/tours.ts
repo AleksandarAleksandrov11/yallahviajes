@@ -221,9 +221,9 @@ export const tours: Tour[] = [
       'jemaa-el-fna-noche',
     ],
     seo: {
-      title: 'Viaje a Marruecos de 5 días: Marrakech y desierto de Merzouga',
+      title: 'Viaje a Marruecos 5 días: Marrakech y Merzouga',
       description:
-        'Circuito de 5 días y 4 noches desde Marrakech al desierto de Merzouga: Aït Ben Haddou, gargantas del Dades y del Todra, noche en campamento de lujo y paseo en dromedario. Conductor y guía de habla hispana.',
+        'Ruta de 5 días y 4 noches desde Marrakech al desierto de Merzouga: Aït Ben Haddou, gargantas del Todra y noche en campamento de lujo.',
     },
   },
 
@@ -370,9 +370,9 @@ export const tours: Tour[] = [
       'te-menta',
     ],
     seo: {
-      title: 'Viaje a Marruecos de 6 días: gran ruta del Sahara desde Marrakech',
+      title: 'Viaje a Marruecos 6 días: gran ruta del Sahara',
       description:
-        'Circuito de 6 días y 5 noches por Marruecos: Alto Atlas, Aït Ben Haddou, gargantas del Todra, dos noches en el desierto de Merzouga, excursión en 4x4 y música en Khamlia.',
+        'Ruta de 6 días y 5 noches por Marruecos: Alto Atlas, Aït Ben Haddou, gargantas del Todra, dos noches en Merzouga y excursión en 4x4.',
     },
   },
 ]

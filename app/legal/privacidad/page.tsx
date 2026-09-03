@@ -173,9 +173,12 @@ export default function PrivacidadPage() {
             los datos imprescindibles para prestar el servicio contratado.
           </li>
           <li>
-            <strong className="font-medium text-ink">Proveedores tecnológicos</strong> que actúan como
-            encargados del tratamiento: {legal.host} (alojamiento y analítica del sitio) y{' '}
-            <Pending>[PROVEEDOR DE CORREO ELECTRÓNICO]</Pending>.
+            <strong className="font-medium text-ink">Proveedores tecnológicos</strong>: {legal.host}
+            {' '}(alojamiento y analítica del sitio), Google Ireland Ltd. (correo electrónico
+            Gmail) y WhatsApp Ireland Ltd., del grupo Meta, cuando la consulta se envía por ese
+            canal. El formulario de contacto de esta web abre WhatsApp con el mensaje ya redactado:
+            al enviarlo, los datos que hayas escrito se tratan también conforme a la política de
+            privacidad de WhatsApp.
           </li>
           <li>
             <strong className="font-medium text-ink">Administraciones públicas</strong>, cuando exista

@@ -19,7 +19,7 @@ export const destinations: Destination[] = [
     kicker: 'Punto de partida',
     description:
       'La Medina, el zoco y la plaza Jemaa el-Fna. Todos nuestros viajes empiezan y terminan aquí, con alojamiento dentro de la Medina.',
-    image: 'jemaa-el-fna-noche',
+    image: 'jemaa-el-fna-atardecer',
     tours: ['marruecos-5-dias', 'marruecos-6-dias'],
   },
   {

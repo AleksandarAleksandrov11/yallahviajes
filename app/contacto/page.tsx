@@ -24,7 +24,7 @@ export default function ContactoPage() {
       <PageHero
         image="jemaa-el-fna-atardecer"
         eyebrow="Contacto"
-        title="Cuéntanos cómo quieres que sea tu viaje."
+        title="Escríbenos y preparamos tu viaje a Marruecos."
         lead="Sin compromiso y sin formularios eternos. Respondemos personalmente en menos de 24 horas."
         crumbs={[
           { label: 'Inicio', href: '/' },
@@ -45,8 +45,8 @@ export default function ContactoPage() {
             />
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-[0.98rem] leading-relaxed text-ink/68">
-                Con estos datos ya podemos prepararte una propuesta concreta: ruta, alojamientos y
-                precio cerrado.
+                Con estos datos preparamos una propuesta concreta: ruta, alojamientos y precio
+                cerrado.
               </p>
             </Reveal>
 
@@ -156,7 +156,7 @@ export default function ContactoPage() {
               </div>
 
               <ImageReveal
-                image="camellos-silueta"
+                image="camellos-sombras"
                 className="mt-6 aspect-3/2"
                 sizes="(max-width: 1024px) 100vw, 34vw"
               />

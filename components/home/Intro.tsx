@@ -27,9 +27,9 @@ export function HomeIntro() {
 
             <Reveal delay={0.1} className="mt-8 max-w-lg prose-editorial">
               <p>
-                Yalah Viajes nace para que ir a Marruecos deje de ser complicado. Preparamos el viaje
-                contigo desde España: ruta, alojamientos, tiempos, lo que te apetece ver. Y cuando
-                aterrizas en Marrakech ya está todo resuelto.
+                Marruecos debe vivirse sin prisa y sin pelearse con la logística. Por eso Yalah
+                Viajes prepara el viaje contigo desde España: ruta, alojamientos, tiempos, lo que te
+                apetece ver. Cuando aterrizas en Marrakech ya está todo resuelto.
               </p>
               <p>
                 Allí te espera nuestro equipo. Un conductor y un guía de habla hispana te acompañan

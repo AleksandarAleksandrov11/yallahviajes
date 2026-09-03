@@ -12,13 +12,13 @@ import { breadcrumbJsonLd, faqJsonLd, pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Preguntas frecuentes',
   description:
-    'Todo lo que hay que saber antes de viajar a Marruecos con Yalah Viajes: qué incluye el precio, alojamiento, comidas, transporte, guía en español y cómo reservar.',
+    'Qué incluye el precio, alojamiento, comidas, transporte y guía en español: todo lo que hay que saber antes de viajar a Marruecos.',
   path: '/faq',
   image: {
-    url: '/img/te-menta.jpg',
-    width: 432,
-    height: 432,
-    alt: 'Té a la menta servido en el campamento del desierto',
+    url: '/img/amanecer-dunas.jpg',
+    width: 1600,
+    height: 1200,
+    alt: 'Amanecer sobre las dunas del Erg Chebbi',
   },
 })
 
@@ -26,9 +26,9 @@ export default function FaqPage() {
   return (
     <>
       <PageHero
-        image="valle-pueblo"
+        image="amanecer-dunas"
         eyebrow="Preguntas frecuentes"
-        title="Todo lo que nos preguntáis antes de reservar."
+        title="Preguntas frecuentes sobre los viajes a Marruecos."
         lead="Contestamos con lo que sabemos con certeza. Cuando un dato aún no está cerrado, lo decimos y te lo damos por teléfono."
         crumbs={[
           { label: 'Inicio', href: '/' },
