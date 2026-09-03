@@ -173,9 +173,13 @@ para `/img` y `/brand`, y redirecciones desde rutas antiguas o en inglés.
 vercel --prod
 ```
 
-Antes de publicar, revisar **[CONTENIDO-PENDIENTE.md](./CONTENIDO-PENDIENTE.md)**:
-recoge todos los datos que la agencia debe facilitar (datos legales, precios,
-correo y respuestas de FAQ) con el fichero exacto donde va cada uno.
+Antes de publicar hay que definir la variable de entorno **`NEXT_PUBLIC_SITE_URL`**
+con el dominio definitivo: de ella dependen el canonical, el sitemap, las Open
+Graph y los datos estructurados. Ver `.env.example`.
+
+**[CONTENIDO-PENDIENTE.md](./CONTENIDO-PENDIENTE.md)** recoge lo que queda por
+completar (precios, algunas respuestas de FAQ y las fotos en alta resolución)
+con el fichero exacto donde va cada cosa.
 
 ---
 
