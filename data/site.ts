@@ -50,9 +50,9 @@ export const site = {
 } as const
 
 export const contact = {
-  phoneDisplay: '+34 645 19 65 93',
-  phoneRaw: '+34645196593',
-  whatsappNumber: '34645196593',
+  phoneDisplay: '+34 624 15 89 59',
+  phoneRaw: '+34624158959',
+  whatsappNumber: '34624158959',
   email: 'yallahviajes@gmail.com' as string | null,
   emailPlaceholder: '[EMAIL DE CONTACTO]',
   /** Población desde la que se organiza el viaje en España. */

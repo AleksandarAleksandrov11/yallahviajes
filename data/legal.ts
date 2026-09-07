@@ -40,7 +40,7 @@ export const legal: LegalHolder = {
   taxId: '05723254A',
   address: 'Avenida de España 56, 13130 Fuente el Fresno (Ciudad Real), España',
   email: 'yallahviajes@gmail.com',
-  phone: '+34 645 19 65 93',
+  phone: '+34 624 15 89 59',
   /** Persona física: no procede inscripción registral. */
   registry: null,
   /** Pendiente de facilitar si la actividad requiere título administrativo. */
