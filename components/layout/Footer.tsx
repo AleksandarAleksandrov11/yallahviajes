@@ -118,7 +118,8 @@ export function Footer() {
         <div className="mt-8 flex flex-col gap-5 text-[0.75rem] text-sand/58 md:flex-row md:items-center md:justify-between">
           <p className="flex items-center gap-2.5">
             <Mark className="h-4 w-4 opacity-70" diamond="#e2c88f" />© {year} {site.name}. Todos los
-            derechos reservados.
+            derechos reservados. Web creada por{' '}
+            <a href="https://www.aasmarketing.com/" className="link-underline transition-colors hover:text-sand/80">AAS Marketing</a>
           </p>
           <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {legalNav.map((item) => (
